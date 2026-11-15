@@ -1,0 +1,153 @@
+{
+  "kind": "fixed_observation_action_regression",
+  "match_id": "633b4a9d-c271-444b-9155-14f67e96aae0",
+  "decision_rows": 40129,
+  "log_integrity_passed": true,
+  "v0_recorded_action_mismatches_at_1e_12": 0,
+  "v1_invalid_actions": 0,
+  "v1_changed_action_calls": 424,
+  "v1_changed_calls_by_round": {
+    "6": 387,
+    "11": 37
+  },
+  "attack_changed_calls": 0,
+  "non_planted_changed_calls": 0,
+  "defend_alive_hidden_position_memory_calls": 475,
+  "critical_observations": {
+    "30969": {
+      "round": 6,
+      "observation_bomb": {
+        "state": "planted",
+        "fuse_end_tick": 32301,
+        "id": "r5:bomb",
+        "carrier": null,
+        "position": [
+          109.48654754867479,
+          91.61455983126075,
+          2.400110095367432
+        ],
+        "site": "A"
+      },
+      "v0_goal": [
+        52.0,
+        26.0,
+        0
+      ],
+      "v1_goal": [
+        109.48654754867479,
+        91.61455983126075,
+        2.400110095367432
+      ],
+      "v1_remembered_position": [
+        109.48654754867479,
+        91.61455983126075,
+        2.400110095367432
+      ],
+      "v0_escape_until": 31059,
+      "v1_escape_until": 0,
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": 0.7898243057013339,
+        "move_right": -0.4314829847437855,
+        "yaw_rate": 1.0,
+        "pitch_rate": -5e-323,
+        "walk": false,
+        "jump": false
+      },
+      "v1_action": {
+        "weapon_slot": 0,
+        "move_forward": -0.7438069462089718,
+        "move_right": -0.0961832977771281,
+        "yaw_rate": 1.0,
+        "pitch_rate": -5e-323,
+        "walk": false
+      }
+    },
+    "30999": {
+      "round": 6,
+      "observation_bomb": {
+        "state": "planted",
+        "fuse_end_tick": 32301
+      },
+      "v0_goal": [
+        52.0,
+        26.0,
+        0
+      ],
+      "v1_goal": [
+        109.48654754867479,
+        91.61455983126075,
+        2.400110095367432
+      ],
+      "v1_remembered_position": [
+        109.48654754867479,
+        91.61455983126075,
+        2.400110095367432
+      ],
+      "v0_escape_until": 31059,
+      "v1_escape_until": 0,
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": 0.9,
+        "move_right": -0.0,
+        "yaw_rate": 0.0,
+        "pitch_rate": -5e-323,
+        "walk": false,
+        "jump": false
+      },
+      "v1_action": {
+        "weapon_slot": 0,
+        "move_forward": -0.7350008151385796,
+        "move_right": -0.14924410120880308,
+        "yaw_rate": 1.0,
+        "pitch_rate": -5e-323,
+        "walk": false
+      }
+    },
+    "57051": {
+      "round": 11,
+      "observation_bomb": {
+        "state": "planted",
+        "fuse_end_tick": 57432
+      },
+      "v0_goal": [
+        112.0,
+        90.0,
+        2.4
+      ],
+      "v1_goal": [
+        49.70061455904943,
+        27.751688951569832,
+        -0.0018900000949949169
+      ],
+      "v1_remembered_position": [
+        49.70061455904943,
+        27.751688951569832,
+        -0.0018900000949949169
+      ],
+      "v0_escape_until": 55227,
+      "v1_escape_until": 0,
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": -0.6999256645488295,
+        "move_right": 0.26945141325641503,
+        "yaw_rate": -1.0,
+        "pitch_rate": -1.1869459682199748e-65,
+        "walk": false
+      },
+      "v1_action": {
+        "weapon_slot": 0,
+        "move_forward": 0.7499999874046674,
+        "move_right": -0.00013745180499851804,
+        "yaw_rate": 0.0012217938290485602,
+        "pitch_rate": -1.1869459682199748e-65,
+        "walk": false
+      }
+    }
+  },
+  "code_sha256": {
+    "v0": "fe7f0d71b0817919fdc62831a77ec4ea6982e15441a157083579b19096946cc5",
+    "v1": "92a052c40cc47424de0a0281698c7e4cd7334910d986724f1cc80da69186d4e9"
+  },
+  "limitations": "Observations remain the recorded V0 trajectory after actions diverge. This checks legal-information memory and action output only. It does not simulate new positions, combat, objective outcomes or win rate."
+}

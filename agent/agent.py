@@ -1,4 +1,4 @@
-"""PPT starter: public-map routes, persistent escape, combat and bomb objectives."""
+"""FPS V1: retain legally observed planted-bomb targets during recovery."""
 import math
 import gc
 from collections import deque
@@ -25,6 +25,7 @@ class Player:
         self.last_position, self.stuck = None, 0
         self.anchor, self.anchor_tick = None, 0
         self.escape_until, self.escape_yaw, self.escapes = 0, 0.0, 0
+        self.planted_bomb_position, self.planted_bomb_fuse = None, None
 
     def load_map(self, row):
         self.sites = row["sites"]
@@ -58,6 +59,21 @@ class Player:
             path.append(self.nodes[cursor])
             cursor = parent[cursor]
         return list(reversed(path))
+
+    def remember_planted_bomb(self, bomb):
+        """Keep only a planted position actually present in our observation."""
+        previous = (self.planted_bomb_fuse, self.planted_bomb_position)
+        if bomb["state"] != "planted":
+            self.planted_bomb_position, self.planted_bomb_fuse = None, None
+            return False
+        fuse = bomb["fuse_end_tick"]
+        if fuse != self.planted_bomb_fuse:
+            self.planted_bomb_position = None
+        self.planted_bomb_fuse = fuse
+        if bomb.get("position") is not None:
+            self.planted_bomb_position = list(bomb["position"])
+        current = (self.planted_bomb_fuse, self.planted_bomb_position)
+        return self.planted_bomb_position is not None and current != previous
 
     def buy(self, o):
         m = o["me"]
@@ -163,6 +179,16 @@ class Player:
             self.last_position, self.stuck = None, 0
             self.anchor, self.anchor_tick = None, 0
             self.escape_until, self.escapes = 0, 0
+            self.planted_bomb_position, self.planted_bomb_fuse = None, None
+        bomb = o["bomb"]
+        new_bomb_target = self.remember_planted_bomb(bomb)
+        if o["side"] == "defend" and new_bomb_target:
+            # A newly learned objective overrides an old escape once. Later
+            # recoveries for this same target must still be able to finish.
+            self.path, self.goal = [], None
+            self.escape_until = 0
+            self.last_position, self.stuck = None, 0
+            self.anchor, self.anchor_tick = None, o["match_tick"]
         m = o["me"]
         if not m["alive"] or o["phase"] not in ("buy", "live"):
             return {}
@@ -174,20 +200,22 @@ class Player:
         if gun and gun["ammo"] == 0 and gun["reserve"]:
             action["reload"] = True
         pos = [m["x"], m["y"], m["z"]]
-        bomb = o["bomb"]
         patrol = 0 if m["carrying_bomb"] else o["round_tick"] // 1800
         index = (o["round_index"] + o["seat"] % 2 + patrol) % len(self.sites)
         site = self.sites[index]
         goal = list(site["center"])
         planted = bomb["state"] == "planted"
-        if planted and bomb.get("position"):
-            goal = list(bomb["position"])
+        bomb_position = bomb.get("position")
+        if planted and o["side"] == "defend":
+            bomb_position = self.planted_bomb_position
+        if planted and bomb_position is not None:
+            goal = list(bomb_position)
         if o["side"] == "attack" and bomb["state"] == "world" and bomb.get("position"):
             goal = list(bomb["position"])
             if distance(pos, goal) < 1.2:
                 return dict(action, use="pickup", pickup_id=bomb["id"])
         if (o["side"] == "defend" and planted
-                and bomb.get("position")
+                and bomb_position is not None
                 and distance(pos, goal) < 2.0):
             return dict(action, use="defuse")
         radius = site["radius"] * 0.5

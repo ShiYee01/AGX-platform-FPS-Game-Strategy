@@ -1,0 +1,33 @@
+{
+  "match_id": "633b4a9d-c271-444b-9155-14f67e96aae0",
+  "played_policy": "V0 工具包原版",
+  "used_as_evidence_for": "V1-炸弹目标记忆",
+  "date_archived": "2026-11-15",
+  "training": {
+    "archived_file": "training-633b4a9d-c271-444b-9155-14f67e96aae0.jsonl.gz",
+    "original_filename": "training-633b4a9d-c271-444b-9155-14f67e96aae0.jsonl",
+    "original_bytes": 132005501,
+    "original_sha256": "5ec70e9886e179d6a2bda17314468e60ac891bdaacf3a7068de4c7e970487fdd",
+    "compressed_bytes": 3953422,
+    "compressed_sha256": "7e65a58e9929e4b78c3d05402f1fe67a18b51041dae6a824d4e6d3b1c77721f0",
+    "decompressed_sha256_matches_original": true
+  },
+  "files": {
+    "比赛结果.png": {
+      "bytes": 253399,
+      "sha256": "4d92f33a7fe4072c7bddcc874c59536409b113097842abde7ca6b14794df950c"
+    },
+    "核查数据.json": {
+      "bytes": 30342,
+      "sha256": "b216ffd94f4b1634ec47a658678e59bf585ca7f0472f4dab8293d66df37ecc41"
+    },
+    "public-events.jsonl": {
+      "bytes": 1921326,
+      "sha256": "bfa82cc8ff07d3226b50a0e1fa1433c5464dfbfb99fadd353499ffc44ac8c071"
+    },
+    "对局分析.md": {
+      "bytes": 11527,
+      "sha256": "b5804aaec331dece4dad0c7c2b92b3f6d70da9de6e5f6c2db4f40308755b8b03"
+    }
+  }
+}

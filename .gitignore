@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+
+# Large original training exports are archived losslessly as .jsonl.gz instead.
+/比赛日志/**/training-*.jsonl
