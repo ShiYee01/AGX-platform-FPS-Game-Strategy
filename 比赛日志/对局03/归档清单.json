@@ -1,0 +1,45 @@
+{
+  "match_number": 3,
+  "match_id": "c5c7a8f2-67df-4cf0-bdb5-0c71a3d61852",
+  "classification": "课程比赛窗口内的V0基线",
+  "date_reported_by_user": "2026-11-15",
+  "date_basis": "用户说明；日志主要为模拟时钟",
+  "date_archived": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "played_policy": "V0 工具包原版",
+  "platform_version_id": "eda92062-7f1b-4b58-93d3-a4ad3569f50b",
+  "platform_source_hash": "4dbb5a2d5fa71b3907d91d1a5020443594d9a9d43ce6f341dd32bc1338b17aad",
+  "source_folder": "对局3",
+  "original_screenshot_filename": "已粘贴 2026-11-15 22.54.56.png",
+  "training": {
+    "archived_file": "training-c5c7a8f2-67df-4cf0-bdb5-0c71a3d61852.jsonl.gz",
+    "original_filename": "training-c5c7a8f2-67df-4cf0-bdb5-0c71a3d61852.jsonl",
+    "original_bytes": 99680341,
+    "original_sha256": "c9543d4bc8a4295929eda3a612670feff7a398109ca4ed46d8535873ee8ad340",
+    "compressed_bytes": 3230951,
+    "compressed_sha256": "2550d88ea454fe1d088cb070e8ed2f0ead8e19f906a537e1d2b337f9627d373c",
+    "decompressed_sha256_matches_original": true,
+    "decision_count": 29858,
+    "decision_bytes": 99679426,
+    "decision_sha256": "df262fa4cbc83f488c1a6b9d36f63fb86374b61fe6b9624b438d6755128fdbbb",
+    "export_complete_verified": true
+  },
+  "files": {
+    "比赛结果.png": {
+      "bytes": 258910,
+      "sha256": "8efbdcaf757521a456b996fa858c85b2cb5a452698b9a05a8f8597de0e453339"
+    },
+    "对局摘要.json": {
+      "bytes": 42609,
+      "sha256": "82fc9214ec6a2971bc6bd9aba8f8388688754389c3957ba6fb7a3e5ea8b870db"
+    },
+    "README.md": {
+      "bytes": 1450,
+      "sha256": "2ceded618a9e179770fab7ccea0505c663f55a2b406b501886d24457b36f0123"
+    },
+    "public-events.jsonl": {
+      "bytes": 1861324,
+      "sha256": "0a081f7bb3e985df5e45fa14f23415da360cbbed72146c91dfb5d346bdbaa911"
+    }
+  }
+}

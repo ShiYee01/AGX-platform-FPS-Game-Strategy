@@ -1,5 +1,15 @@
 # AGX FPS local optimisation kit / 本地优化工具包
 
+## 本仓库的比赛归档与当前版本
+
+- 当前开发策略：**V1-炸弹目标记忆**，入口 `agent/agent.py`；用户计划下一轮提交AGX参赛。
+- [比赛日志索引](比赛日志/README.md)：对局01为11月14日赛前测试，对局02～11为正式十场V0基线。
+- [正式十场联合分析](比赛日志/V0联合分析/联合分析报告.md)：原版重复问题、评分口径和V1实验建议。
+- [策略更新记录](策略更新/README.md)：版本依据、修改说明与验证情况。
+
+以上11场实际参赛代码均为V0；现有V1尚无真实比赛结果。下方保留原工具包说明。
+
+
 FPS 策略在 PPT 示例基础上修了寻路和脱困；与网站和编辑器模板使用相同文件。赛车策略保留 PPT 原版。
 The FPS policy fixes pathfinding and recovery on top of the PPT example and uses the same files as the website and editor.
 

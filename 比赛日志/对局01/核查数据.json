@@ -1251,5 +1251,8 @@
     "Action reproduction uses tolerance 1e-12. Exact float differences in 289 calls are at most 2.963e-15.",
     "Public enemy and bomb data are used only for diagnosis; the proposed policy memory is restricted to coordinates actually present in private observations.",
     "No engine replay, counterfactual match or strategy code change was performed."
-  ]
+  ],
+  "match_classification": "赛前测试",
+  "match_date_reported_by_user": "2026-11-14",
+  "included_in_formal_ten_match_baseline": false
 }

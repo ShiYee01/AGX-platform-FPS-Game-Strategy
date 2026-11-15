@@ -18,16 +18,25 @@
       "sha256": "4d92f33a7fe4072c7bddcc874c59536409b113097842abde7ca6b14794df950c"
     },
     "核查数据.json": {
-      "bytes": 30342,
-      "sha256": "b216ffd94f4b1634ec47a658678e59bf585ca7f0472f4dab8293d66df37ecc41"
+      "bytes": 30481,
+      "sha256": "a7e63936e9992fa962aa3772414d3502d1075359d51b89c827a26bfffda0a4f8"
     },
     "public-events.jsonl": {
       "bytes": 1921326,
       "sha256": "bfa82cc8ff07d3226b50a0e1fa1433c5464dfbfb99fadd353499ffc44ac8c071"
     },
     "对局分析.md": {
-      "bytes": 11527,
-      "sha256": "b5804aaec331dece4dad0c7c2b92b3f6d70da9de6e5f6c2db4f40308755b8b03"
+      "bytes": 11716,
+      "sha256": "e74a4b5b1b45806b6c4115a89dfa9985c1937ad9aa77646702ef5b074569d5c9"
+    },
+    "README.md": {
+      "bytes": 2571,
+      "sha256": "547fd22586cc0cc018b6d9ff783ebfa5b5599f5dfd0f1326ce1561d76ad71c8a"
     }
-  }
+  },
+  "classification": "赛前测试",
+  "date_reported_by_user": "2026-11-14",
+  "date_basis": "用户说明；日志主要为模拟时钟",
+  "included_in_formal_ten_match_baseline": false,
+  "still_included_in_platform_cumulative_match_count": true
 }
