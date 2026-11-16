@@ -1,0 +1,179 @@
+{
+  "kind": "fixed_observation_regression_not_simulation",
+  "matches": [
+    {
+      "match_id": "b514cd60-73de-44b0-92cf-82842adf0d8a",
+      "decision_rows": 34330,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 9219,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 0,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 223,
+      "route_wait_decisions_on_old_positions": 1226,
+      "phase_counts": {
+        "buy": 2880,
+        "live": 29150,
+        "post": 2300
+      },
+      "local_v2_act_seconds": 0.09399388066958636,
+      "local_json_decode_seconds": 0.538176565838512,
+      "local_max_v2_act_ms": 0.2945840242318809,
+      "local_max_v2_act_tick": 1146,
+      "local_max_decode_plus_v2_act_ms": 0.7611240143887699
+    },
+    {
+      "match_id": "e6caf08e-e8e2-4893-9baf-62eb99cf7fe8",
+      "decision_rows": 33801,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 6939,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 0,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 171,
+      "route_wait_decisions_on_old_positions": 840,
+      "phase_counts": {
+        "buy": 2520,
+        "live": 29281,
+        "post": 2000
+      },
+      "local_v2_act_seconds": 0.0867839222191833,
+      "local_json_decode_seconds": 0.5351713201962411,
+      "local_max_v2_act_ms": 0.2681660116650164,
+      "local_max_v2_act_tick": 58998,
+      "local_max_decode_plus_v2_act_ms": 1.3806250062771142
+    },
+    {
+      "match_id": "00460e54-6029-41a7-8294-950d124c2e65",
+      "decision_rows": 30436,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 12354,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 0,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 303,
+      "route_wait_decisions_on_old_positions": 1268,
+      "phase_counts": {
+        "buy": 2160,
+        "live": 26576,
+        "post": 1700
+      },
+      "local_v2_act_seconds": 0.300003845768515,
+      "local_json_decode_seconds": 0.46855361212510616,
+      "local_max_v2_act_ms": 2.50325002707541,
+      "local_max_v2_act_tick": 22815,
+      "local_max_decode_plus_v2_act_ms": 2.5225839926861227
+    },
+    {
+      "match_id": "c76a4d00-4dd7-48db-97c9-e5893635f26a",
+      "decision_rows": 25825,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 3905,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 0,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 110,
+      "route_wait_decisions_on_old_positions": 310,
+      "phase_counts": {
+        "buy": 2520,
+        "live": 21305,
+        "post": 2000
+      },
+      "local_v2_act_seconds": 0.054369987454265356,
+      "local_json_decode_seconds": 0.3706586023326963,
+      "local_max_v2_act_ms": 0.04695897223427892,
+      "local_max_v2_act_tick": 47742,
+      "local_max_decode_plus_v2_act_ms": 0.16129197319969535
+    },
+    {
+      "match_id": "e144283c-bc52-4c66-b44c-537241f571fb",
+      "decision_rows": 20435,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 4532,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 0,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 112,
+      "route_wait_decisions_on_old_positions": 500,
+      "phase_counts": {
+        "buy": 1800,
+        "live": 17235,
+        "post": 1400
+      },
+      "local_v2_act_seconds": 0.05438844545278698,
+      "local_json_decode_seconds": 0.3235483848839067,
+      "local_max_v2_act_ms": 0.0850829528644681,
+      "local_max_v2_act_tick": 4368,
+      "local_max_decode_plus_v2_act_ms": 0.1604999997653067
+    },
+    {
+      "match_id": "e2e40a26-1715-4a31-946a-3787284c5a52",
+      "decision_rows": 18887,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 7405,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 0,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 191,
+      "route_wait_decisions_on_old_positions": 825,
+      "phase_counts": {
+        "buy": 1680,
+        "live": 15907,
+        "post": 1300
+      },
+      "local_v2_act_seconds": 0.22796000592643395,
+      "local_json_decode_seconds": 0.3108201246941462,
+      "local_max_v2_act_ms": 2.954208990558982,
+      "local_max_v2_act_tick": 41625,
+      "local_max_decode_plus_v2_act_ms": 2.9701259918510914
+    },
+    {
+      "match_id": "50d812b0-9b7b-4491-83bc-7da6062176fe",
+      "decision_rows": 28376,
+      "log_integrity_passed": true,
+      "recorded_v1_action_mismatches": 0,
+      "v2_invalid_actions": 0,
+      "v2_action_changes_on_old_observations": 4921,
+      "memory_mismatches": 0,
+      "hidden_bomb_memory_calls": 96,
+      "patrol_rotations": 0,
+      "premature_patrol_rotations": 0,
+      "recovery_starts_on_old_positions": 124,
+      "route_wait_decisions_on_old_positions": 666,
+      "phase_counts": {
+        "buy": 2280,
+        "live": 24296,
+        "post": 1800
+      },
+      "local_v2_act_seconds": 0.06571331399027258,
+      "local_json_decode_seconds": 0.42433354654349387,
+      "local_max_v2_act_ms": 0.04658300895243883,
+      "local_max_v2_act_tick": 46701,
+      "local_max_decode_plus_v2_act_ms": 0.15958305448293686
+    }
+  ],
+  "total_decisions": 192090,
+  "code_sha256": {
+    "v1": "92a052c40cc47424de0a0281698c7e4cd7334910d986724f1cc80da69186d4e9",
+    "v2": "8b7769dbecac79a8a5553ad60fd86e59c2c536f7c60fa784733047fff82e2ac8"
+  },
+  "limitations": "All positions and events remain recorded V1 outcomes. Changed V2 outputs are not applied to a game engine. Do not interpret rotation/recovery counts as future match results. Local timing is descriptive and does not guarantee AGX admission limits."
+}

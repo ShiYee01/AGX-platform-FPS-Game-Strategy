@@ -51,7 +51,7 @@ def validate(action):
 
 def check(log):
     v0 = policy(UPDATE/'agent-v0.py')
-    v1 = policy(ROOT/'agent/agent.py')
+    v1 = policy(ROOT/'策略更新/V2-稳定目标与分级脱困/agent-v1.py')
     count = mismatches = changed = attack_changed = unplanted_changed = 0
     changes_by_round = Counter()
     remembered_calls = 0
@@ -114,7 +114,7 @@ def check(log):
         'defend_alive_hidden_position_memory_calls': remembered_calls,
         'critical_observations': evidence,
         'code_sha256': {label: hashlib.sha256(path.read_bytes()).hexdigest()
-            for label, path in [('v0', UPDATE/'agent-v0.py'), ('v1', ROOT/'agent/agent.py')]},
+            for label, path in [('v0', UPDATE/'agent-v0.py'), ('v1', ROOT/'策略更新/V2-稳定目标与分级脱困/agent-v1.py')]},
         'limitations': 'Observations remain the recorded V0 trajectory after actions diverge. '
                         'This checks legal-information memory and action output only. '
                         'It does not simulate new positions, combat, objective outcomes or win rate.',

@@ -1,0 +1,1064 @@
+{
+  "match_number": 17,
+  "job_id": "e2e40a26-1715-4a31-946a-3787284c5a52",
+  "map_id": "dust2-cs2-v54",
+  "seat": 3,
+  "round_number": 10,
+  "public_round_index": 9,
+  "anomaly": {
+    "round": 10,
+    "start_tick": 30780,
+    "end_tick": 36081,
+    "seconds": 88.34999999999712,
+    "turn_request_calls": 1767,
+    "move_request_calls": 1767,
+    "position": [
+      125.48656388674108,
+      93.13488994277954,
+      19.7796994467817
+    ],
+    "velocity": [
+      3.7250449806066355,
+      0.0,
+      3.9452984678666474
+    ],
+    "grounded": false,
+    "movement_mode": "air",
+    "start_yaw": -0.37879903617407223,
+    "same_bomb_calls": 1767
+  },
+  "samples": [
+    {
+      "tick": 30777,
+      "round": 10,
+      "round_seconds": 32.583333333333336,
+      "phase": "live",
+      "me": {
+        "x": 125.3623957207209,
+        "y": 93.13488994277954,
+        "z": 19.63690060896392,
+        "yaw": -0.4787990361740722,
+        "pitch": 0.0,
+        "hp": 100.0,
+        "armor": 90.40447785477846,
+        "helmet": false,
+        "cash": 16000,
+        "alive": true,
+        "crouch": false,
+        "vx": 3.7250449806066355,
+        "vy": 0.0,
+        "vz": 4.622631801199984,
+        "ammo": 30,
+        "reload": 0.0,
+        "recoil": 0,
+        "stamina": 100.0,
+        "lean_offset": 0.0,
+        "active_slot": 0,
+        "ads_progress": 0.0,
+        "sprinting": false,
+        "grounded": false,
+        "slots": {
+          "primary": "item:35",
+          "secondary": "item:6",
+          "knife": "item:7",
+          "kit": null
+        },
+        "throwables": [],
+        "weapons": [
+          {
+            "id": "ak47",
+            "ammo": 30,
+            "reserve": 90,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:35",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "pistol",
+            "ammo": 20,
+            "reserve": 60,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:6",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "knife",
+            "ammo": 0,
+            "reserve": 0,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0.0,
+            "recoil_yaw": 0.0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:7",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0.0,
+              "yaw": 0.0,
+              "velPitch": 0.0,
+              "velYaw": 0.0,
+              "viewPitch": 0.0,
+              "viewYaw": 0.0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {},
+            "reload_state": null
+          }
+        ],
+        "pickup_ready_tick": 28822,
+        "switch_until": 29196,
+        "throw_ready": 0,
+        "throwable_kinds": [],
+        "blind_ticks": 0,
+        "weapon_status": null,
+        "carrying_bomb": false,
+        "has_kit": false,
+        "walk": false,
+        "quiet": false,
+        "duck": false,
+        "zoom_level": 0,
+        "ladder_id": null,
+        "movement_mode": "air",
+        "shot_ready": 0
+      },
+      "bomb": {
+        "state": "held",
+        "fuse_end_tick": null,
+        "id": "r9:bomb",
+        "carrier": 0,
+        "position": [
+          131.36790685470288,
+          54.5869485679873,
+          21.73867860324603
+        ],
+        "site": null
+      },
+      "visible": [],
+      "action": {
+        "weapon_slot": 0,
+        "move_forward": 0.6882765864320775,
+        "move_right": -0.2979519098267488,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false
+      },
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": 0.6882765864320775,
+        "move_right": -0.2979519098267488,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false
+      },
+      "goal": [
+        167.3735,
+        60.2617,
+        20.2032
+      ],
+      "path": [
+        [
+          133.8328,
+          93.731,
+          20.9144
+        ],
+        [
+          136.4807,
+          92.1069,
+          19.3904
+        ],
+        [
+          136.40449999999998,
+          89.5542,
+          16.875799999999998
+        ],
+        [
+          138.227,
+          89.8908,
+          16.8673
+        ]
+      ],
+      "v0_goal": [
+        167.3735,
+        60.2617,
+        20.2032
+      ],
+      "v0_path": [
+        [
+          133.8328,
+          93.731,
+          20.9144
+        ],
+        [
+          136.4807,
+          92.1069,
+          19.3904
+        ],
+        [
+          136.40449999999998,
+          89.5542,
+          16.875799999999998
+        ],
+        [
+          138.227,
+          89.8908,
+          16.8673
+        ]
+      ],
+      "escape_until": 29886,
+      "receipts": []
+    },
+    {
+      "tick": 30780,
+      "round": 10,
+      "round_seconds": 32.63333333333333,
+      "phase": "live",
+      "me": {
+        "x": 125.48656388674108,
+        "y": 93.13488994277954,
+        "z": 19.7796994467817,
+        "yaw": -0.37879903617407223,
+        "pitch": 0.0,
+        "hp": 100.0,
+        "armor": 90.40447785477846,
+        "helmet": false,
+        "cash": 16000,
+        "alive": true,
+        "crouch": false,
+        "vx": 3.7250449806066355,
+        "vy": 0.0,
+        "vz": 3.9452984678666474,
+        "ammo": 30,
+        "reload": 0.0,
+        "recoil": 0,
+        "stamina": 100.0,
+        "lean_offset": 0.0,
+        "active_slot": 0,
+        "ads_progress": 0.0,
+        "sprinting": false,
+        "grounded": false,
+        "slots": {
+          "primary": "item:35",
+          "secondary": "item:6",
+          "knife": "item:7",
+          "kit": null
+        },
+        "throwables": [],
+        "weapons": [
+          {
+            "id": "ak47",
+            "ammo": 30,
+            "reserve": 90,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:35",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "pistol",
+            "ammo": 20,
+            "reserve": 60,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:6",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "knife",
+            "ammo": 0,
+            "reserve": 0,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0.0,
+            "recoil_yaw": 0.0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:7",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0.0,
+              "yaw": 0.0,
+              "velPitch": 0.0,
+              "velYaw": 0.0,
+              "viewPitch": 0.0,
+              "viewYaw": 0.0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {},
+            "reload_state": null
+          }
+        ],
+        "pickup_ready_tick": 28822,
+        "switch_until": 29196,
+        "throw_ready": 0,
+        "throwable_kinds": [],
+        "blind_ticks": 0,
+        "weapon_status": null,
+        "carrying_bomb": false,
+        "has_kit": false,
+        "walk": false,
+        "quiet": false,
+        "duck": false,
+        "zoom_level": 0,
+        "ladder_id": null,
+        "movement_mode": "air",
+        "shot_ready": 0
+      },
+      "bomb": {
+        "state": "held",
+        "fuse_end_tick": null,
+        "id": "r9:bomb",
+        "carrier": 0,
+        "position": [
+          131.38997111894457,
+          54.58407340974553,
+          21.881477441063808
+        ],
+        "site": null
+      },
+      "visible": [],
+      "action": {
+        "weapon_slot": 0,
+        "move_forward": 0.7148204991116776,
+        "move_right": -0.22700584584924743,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false
+      },
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": 0.7148204991116776,
+        "move_right": -0.22700584584924743,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false
+      },
+      "goal": [
+        167.3735,
+        60.2617,
+        20.2032
+      ],
+      "path": [
+        [
+          133.8328,
+          93.731,
+          20.9144
+        ],
+        [
+          136.4807,
+          92.1069,
+          19.3904
+        ],
+        [
+          136.40449999999998,
+          89.5542,
+          16.875799999999998
+        ],
+        [
+          138.227,
+          89.8908,
+          16.8673
+        ]
+      ],
+      "v0_goal": [
+        167.3735,
+        60.2617,
+        20.2032
+      ],
+      "v0_path": [
+        [
+          133.8328,
+          93.731,
+          20.9144
+        ],
+        [
+          136.4807,
+          92.1069,
+          19.3904
+        ],
+        [
+          136.40449999999998,
+          89.5542,
+          16.875799999999998
+        ],
+        [
+          138.227,
+          89.8908,
+          16.8673
+        ]
+      ],
+      "escape_until": 29886,
+      "receipts": []
+    },
+    {
+      "tick": 30834,
+      "round": 10,
+      "round_seconds": 33.53333333333333,
+      "phase": "live",
+      "me": {
+        "x": 125.48656388674108,
+        "y": 93.13488994277954,
+        "z": 19.7796994467817,
+        "yaw": -0.37879903617407223,
+        "pitch": 0.0,
+        "hp": 100.0,
+        "armor": 90.40447785477846,
+        "helmet": false,
+        "cash": 16000,
+        "alive": true,
+        "crouch": false,
+        "vx": 3.7250449806066355,
+        "vy": 0.0,
+        "vz": 3.9452984678666474,
+        "ammo": 30,
+        "reload": 0.0,
+        "recoil": 0,
+        "stamina": 100.0,
+        "lean_offset": 0.0,
+        "active_slot": 0,
+        "ads_progress": 0.0,
+        "sprinting": false,
+        "grounded": false,
+        "slots": {
+          "primary": "item:35",
+          "secondary": "item:6",
+          "knife": "item:7",
+          "kit": null
+        },
+        "throwables": [],
+        "weapons": [
+          {
+            "id": "ak47",
+            "ammo": 30,
+            "reserve": 90,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:35",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "pistol",
+            "ammo": 20,
+            "reserve": 60,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:6",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "knife",
+            "ammo": 0,
+            "reserve": 0,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0.0,
+            "recoil_yaw": 0.0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:7",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0.0,
+              "yaw": 0.0,
+              "velPitch": 0.0,
+              "velYaw": 0.0,
+              "viewPitch": 0.0,
+              "viewYaw": 0.0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {},
+            "reload_state": null
+          }
+        ],
+        "pickup_ready_tick": 28822,
+        "switch_until": 29196,
+        "throw_ready": 0,
+        "throwable_kinds": [],
+        "blind_ticks": 0,
+        "weapon_status": null,
+        "carrying_bomb": false,
+        "has_kit": false,
+        "walk": false,
+        "quiet": false,
+        "duck": false,
+        "zoom_level": 0,
+        "ladder_id": null,
+        "movement_mode": "air",
+        "shot_ready": 0
+      },
+      "bomb": {
+        "state": "held",
+        "fuse_end_tick": null,
+        "id": "r9:bomb",
+        "carrier": 0,
+        "position": [
+          131.38997111894457,
+          54.58407340974553,
+          21.881477441063808
+        ],
+        "site": null
+      },
+      "visible": [],
+      "action": {
+        "weapon_slot": 0,
+        "move_forward": -0.3745321528924282,
+        "move_right": -0.8183676841431136,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false,
+        "jump": false
+      },
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": -0.3745321528924282,
+        "move_right": -0.8183676841431136,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false,
+        "jump": false
+      },
+      "goal": [
+        167.3735,
+        60.2617,
+        20.2032
+      ],
+      "path": [],
+      "v0_goal": [
+        167.3735,
+        60.2617,
+        20.2032
+      ],
+      "v0_path": [],
+      "escape_until": 30954,
+      "receipts": []
+    },
+    {
+      "tick": 33030,
+      "round": 10,
+      "round_seconds": 70.13333333333334,
+      "phase": "live",
+      "me": {
+        "x": 125.48656388674108,
+        "y": 93.13488994277954,
+        "z": 19.7796994467817,
+        "yaw": -0.37879903617407223,
+        "pitch": 0.0,
+        "hp": 100.0,
+        "armor": 90.40447785477846,
+        "helmet": false,
+        "cash": 16000,
+        "alive": true,
+        "crouch": false,
+        "vx": 3.7250449806066355,
+        "vy": 0.0,
+        "vz": 3.9452984678666474,
+        "ammo": 30,
+        "reload": 0.0,
+        "recoil": 0,
+        "stamina": 100.0,
+        "lean_offset": 0.0,
+        "active_slot": 0,
+        "ads_progress": 0.0,
+        "sprinting": false,
+        "grounded": false,
+        "slots": {
+          "primary": "item:35",
+          "secondary": "item:6",
+          "knife": "item:7",
+          "kit": null
+        },
+        "throwables": [],
+        "weapons": [
+          {
+            "id": "ak47",
+            "ammo": 30,
+            "reserve": 90,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:35",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "pistol",
+            "ammo": 20,
+            "reserve": 60,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:6",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "knife",
+            "ammo": 0,
+            "reserve": 0,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0.0,
+            "recoil_yaw": 0.0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:7",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0.0,
+              "yaw": 0.0,
+              "velPitch": 0.0,
+              "velYaw": 0.0,
+              "viewPitch": 0.0,
+              "viewYaw": 0.0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {},
+            "reload_state": null
+          }
+        ],
+        "pickup_ready_tick": 28822,
+        "switch_until": 29196,
+        "throw_ready": 0,
+        "throwable_kinds": [],
+        "blind_ticks": 0,
+        "weapon_status": null,
+        "carrying_bomb": false,
+        "has_kit": false,
+        "walk": false,
+        "quiet": false,
+        "duck": false,
+        "zoom_level": 0,
+        "ladder_id": null,
+        "movement_mode": "air",
+        "shot_ready": 0
+      },
+      "bomb": {
+        "state": "held",
+        "fuse_end_tick": null,
+        "id": "r9:bomb",
+        "carrier": 0,
+        "position": [
+          131.38997111894457,
+          54.58407340974553,
+          21.881477441063808
+        ],
+        "site": null
+      },
+      "visible": [],
+      "action": {
+        "weapon_slot": 0,
+        "move_forward": -0.3745321528924282,
+        "move_right": -0.8183676841431136,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false,
+        "jump": false
+      },
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": -0.3745321528924282,
+        "move_right": -0.8183676841431136,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false,
+        "jump": false
+      },
+      "goal": [
+        166.69400000000002,
+        130.0736,
+        22.54
+      ],
+      "path": [],
+      "v0_goal": [
+        166.69400000000002,
+        130.0736,
+        22.54
+      ],
+      "v0_path": [],
+      "escape_until": 33150,
+      "receipts": []
+    },
+    {
+      "tick": 36081,
+      "round": 10,
+      "round_seconds": 120.98333333333333,
+      "phase": "live",
+      "me": {
+        "x": 125.48656388674108,
+        "y": 93.13488994277954,
+        "z": 19.7796994467817,
+        "yaw": -0.37879903617407223,
+        "pitch": 0.0,
+        "hp": 100.0,
+        "armor": 90.40447785477846,
+        "helmet": false,
+        "cash": 16000,
+        "alive": true,
+        "crouch": false,
+        "vx": 3.7250449806066355,
+        "vy": 0.0,
+        "vz": 3.9452984678666474,
+        "ammo": 30,
+        "reload": 0.0,
+        "recoil": 0,
+        "stamina": 100.0,
+        "lean_offset": 0.0,
+        "active_slot": 0,
+        "ads_progress": 0.0,
+        "sprinting": false,
+        "grounded": false,
+        "slots": {
+          "primary": "item:35",
+          "secondary": "item:6",
+          "knife": "item:7",
+          "kit": null
+        },
+        "throwables": [],
+        "weapons": [
+          {
+            "id": "ak47",
+            "ammo": 30,
+            "reserve": 90,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:35",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "pistol",
+            "ammo": 20,
+            "reserve": 60,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0,
+            "recoil_yaw": 0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:6",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0,
+              "yaw": 0,
+              "velPitch": 0,
+              "velYaw": 0,
+              "viewPitch": 0,
+              "viewYaw": 0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {
+              "pressed": false
+            },
+            "reload_state": null
+          },
+          {
+            "id": "knife",
+            "ammo": 0,
+            "reserve": 0,
+            "shot_ready": 0,
+            "reload_until": null,
+            "recoil_pitch": 0.0,
+            "recoil_yaw": 0.0,
+            "shots": 0,
+            "last_shot": null,
+            "item_id": "item:7",
+            "aim_punch": {
+              "index": 0.0,
+              "pitch": 0.0,
+              "yaw": 0.0,
+              "velPitch": 0.0,
+              "velYaw": 0.0,
+              "viewPitch": 0.0,
+              "viewYaw": 0.0
+            },
+            "inaccuracy": 0.0,
+            "trigger_state": {},
+            "reload_state": null
+          }
+        ],
+        "pickup_ready_tick": 28822,
+        "switch_until": 29196,
+        "throw_ready": 0,
+        "throwable_kinds": [],
+        "blind_ticks": 0,
+        "weapon_status": null,
+        "carrying_bomb": false,
+        "has_kit": false,
+        "walk": false,
+        "quiet": false,
+        "duck": false,
+        "zoom_level": 0,
+        "ladder_id": null,
+        "movement_mode": "air",
+        "shot_ready": 0
+      },
+      "bomb": {
+        "state": "held",
+        "fuse_end_tick": null,
+        "id": "r9:bomb",
+        "carrier": 0,
+        "position": [
+          131.38997111894457,
+          54.58407340974553,
+          21.881477441063808
+        ],
+        "site": null
+      },
+      "visible": [],
+      "action": {
+        "weapon_slot": 0,
+        "move_forward": 0.7148204991116776,
+        "move_right": -0.22700584584924743,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false
+      },
+      "v0_action": {
+        "weapon_slot": 0,
+        "move_forward": 0.7148204991116776,
+        "move_right": -0.22700584584924743,
+        "yaw_rate": 1.0,
+        "pitch_rate": -0.0,
+        "walk": false
+      },
+      "goal": [
+        166.69400000000002,
+        130.0736,
+        22.54
+      ],
+      "path": [
+        [
+          133.8328,
+          93.731,
+          20.9144
+        ],
+        [
+          132.2834,
+          94.0627,
+          20.9144
+        ],
+        [
+          133.2327,
+          95.8693,
+          20.1016
+        ],
+        [
+          135.2711,
+          96.898,
+          20.1016
+        ]
+      ],
+      "v0_goal": [
+        166.69400000000002,
+        130.0736,
+        22.54
+      ],
+      "v0_path": [
+        [
+          133.8328,
+          93.731,
+          20.9144
+        ],
+        [
+          132.2834,
+          94.0627,
+          20.9144
+        ],
+        [
+          133.2327,
+          95.8693,
+          20.1016
+        ],
+        [
+          135.2711,
+          96.898,
+          20.1016
+        ]
+      ],
+      "escape_until": 36078,
+      "receipts": []
+    }
+  ],
+  "public_events": [
+    {
+      "type": "round_start",
+      "event_id": "1801780186:1716",
+      "match_tick": 28822,
+      "round_index": 9,
+      "attack_team": 0,
+      "defend_team": 1,
+      "buy_freeze_end_tick": 29182,
+      "buy_deadline_tick": 30682,
+      "live_end_tick": 36082,
+      "period": "regulation",
+      "overtime_number": 0,
+      "win_target": 13,
+      "reset_money": null
+    },
+    {
+      "type": "round_end",
+      "event_id": "1801780186:1805",
+      "match_tick": 36082,
+      "round_index": 9,
+      "round_winner": 1,
+      "reason": "timeout",
+      "round_wins": [
+        9,
+        1
+      ],
+      "post_end_tick": 36382
+    }
+  ],
+  "conclusion": "Suspected unchanged simulation/observation state. This evidence alone cannot distinguish simulation, export, or other causes. Normal navigation failure is not established.",
+  "source_directory": "/Users/syeah/Downloads/FPS/对局17"
+}

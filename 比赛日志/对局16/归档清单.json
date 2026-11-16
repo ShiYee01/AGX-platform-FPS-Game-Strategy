@@ -1,0 +1,43 @@
+{
+  "match_number": 16,
+  "match_id": "e144283c-bc52-4c66-b44c-537241f571fb",
+  "played_policy": "V1-炸弹目标记忆",
+  "archived_at": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "match_date": "unknown_absolute_date",
+  "platform_version_id": "ba765f55-4754-4d55-b738-60507f944152",
+  "platform_source_hash": "7a1569f9d97d79823a0e93bc2077fe660a06825fdf95eaedde0203d890ec784e",
+  "source_folder": "对局16",
+  "original_screenshot_filename": "已粘贴 2026-11-16 14.29.43.png",
+  "training": {
+    "archived_file": "training-e144283c-bc52-4c66-b44c-537241f571fb.jsonl.gz",
+    "original_filename": "training-e144283c-bc52-4c66-b44c-537241f571fb.jsonl",
+    "original_bytes": 68384552,
+    "original_sha256": "0b69f3b2c3ac841c9146bcf9a766dc034c5866058e228298e1eac5b4af5d4edd",
+    "compressed_bytes": 2226878,
+    "compressed_sha256": "7b06c2b2b3f0fec86130a251f6156ea0fe1f055f5d8a29c91c4bea65cbec5c6e",
+    "decompressed_sha256_matches_original": true,
+    "decision_count": 20435,
+    "decision_bytes": 68383637,
+    "decision_sha256": "efff333ea7fc1ca5fe5dd4bbcf7b04cc5954f5b3cf35e60b96e121b80edcd2bc",
+    "export_complete_verified": true
+  },
+  "files": {
+    "比赛结果.png": {
+      "bytes": 255633,
+      "sha256": "773f9c586fa9725424bb5198259eafef6bc5ab9e7d96bb60635b70b32edf3c30"
+    },
+    "对局摘要.json": {
+      "bytes": 28025,
+      "sha256": "8e0aff880015096b374b1a48bee77e807b24940199ec49b54d11f9aabc318889"
+    },
+    "README.md": {
+      "bytes": 1278,
+      "sha256": "ee0b715c40c35002d49eb0e3897f1c9dcde23bb294de9aac804e2ed765b16ba6"
+    },
+    "public-events.jsonl": {
+      "bytes": 1464286,
+      "sha256": "fdaeb608d29735754f59bcda257be688b070be06743e626d533110cb5c7b05c0"
+    }
+  }
+}

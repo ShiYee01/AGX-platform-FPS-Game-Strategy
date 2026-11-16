@@ -1,0 +1,46 @@
+{
+  "version": "V2-稳定目标与分级脱困",
+  "date": "2026-11-16",
+  "unit_tests": {
+    "passed": 21,
+    "failed": 0,
+    "scope": "9 objective-memory regression checks + 12 navigation behavior checks"
+  },
+  "fixed_observation": {
+    "matches": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "decisions": 192090,
+    "invalid_actions": 0,
+    "recorded_v1_mismatches": 0,
+    "memory_mismatches": 0,
+    "premature_rotations": 0,
+    "changed_actions": 49275,
+    "recovery_starts_on_recorded_positions": 1234,
+    "note": "Counts are on unmodified V1 positions, not simulated V2 match outcomes."
+  },
+  "unchanged_methods": [
+    "remember_planted_bomb",
+    "buy",
+    "combat"
+  ],
+  "v1_sha256": "92a052c40cc47424de0a0281698c7e4cd7334910d986724f1cc80da69186d4e9",
+  "v2_sha256": "8b7769dbecac79a8a5553ad60fd86e59c2c536f7c60fa784733047fff82e2ac8",
+  "v2_source_bytes": 14523,
+  "package": {
+    "filename": "agx-fps-v2.zip",
+    "sha256": "937524591af9d24594d71bfa9ea024b7615748968e305f3f256e635e7ac3b703",
+    "bytes": 4097,
+    "entries": [
+      "agent.py"
+    ]
+  },
+  "real_v2_match_results": null,
+  "local_max_act_ms": 2.954208990558982
+}

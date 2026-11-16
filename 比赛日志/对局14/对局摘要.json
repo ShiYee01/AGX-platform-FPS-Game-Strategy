@@ -1,0 +1,2326 @@
+{
+  "match_number": 14,
+  "map_id": "dust2-cs2-v54",
+  "own_seat": 7,
+  "own_team": 1,
+  "result": "win",
+  "score_for": 13,
+  "score_against": 5,
+  "decision_rows": 30436,
+  "integrity_passed": true,
+  "decision_sha256": "c994b0592804951ab3a8d4119ffd0d6f47c61b5e3a90eeb24d12aef04530a28a",
+  "v1_action_mismatches": {},
+  "v1_invalid_actions": [],
+  "own_fault_decisions": 0,
+  "public_faults": [],
+  "totals": {
+    "kills": 12,
+    "deaths": 6,
+    "assists": 0,
+    "damage": 1571.2612361614642,
+    "shots": 55,
+    "plants": 0,
+    "defuse_starts": 0,
+    "defuses": 0,
+    "alive_calls": 22487,
+    "visible_calls": 225,
+    "move_calls": 19674,
+    "near_goal_escapes": 4,
+    "hidden_after_seen_calls": 0,
+    "hidden_after_seen_episodes": 0,
+    "known_planted_calls": 0,
+    "v0_different_calls": 0,
+    "v0_different_attack_calls": 0,
+    "v0_different_nonplanted_calls": 0,
+    "premature_patrol_flips": 10,
+    "defense_planted_alive_calls": 0,
+    "defuse_uses_hidden": 0,
+    "hidden_goal_other_move_calls": 0,
+    "hidden_other_goal_escape_calls": 0,
+    "hidden_cached_goal_move_calls": 0,
+    "alive_at_losing_explosion": 0,
+    "escapes": 97,
+    "patrol_flips": 11,
+    "new_target_during_escape": 0,
+    "zero_shot_rounds": 9,
+    "no_enemy_seen_rounds": 7
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "side": "attack",
+      "calls": 1161,
+      "alive_calls": 941,
+      "visible_calls": 0,
+      "move_calls": 881,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 360,
+      "first_move_tick": 540,
+      "escapes": [
+        {
+          "tick": 627,
+          "position": [
+            74.66691213397509,
+            81.79796307164985,
+            23.232306061531613
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 840,
+          "position": [
+            80.93375853139626,
+            88.12544828994442,
+            22.67860956502532
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 2232,
+          "position": [
+            88.07725179943698,
+            54.13206501090621,
+            22.43851003013611
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 0,
+      "end_tick": 3181,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 2,
+      "side": "attack",
+      "calls": 1014,
+      "alive_calls": 794,
+      "visible_calls": 0,
+      "move_calls": 734,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 3843,
+      "first_move_tick": 4023,
+      "escapes": [
+        {
+          "tick": 4425,
+          "position": [
+            83.39795104798208,
+            88.19608606077803,
+            23.031044010257226
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 4653,
+          "position": [
+            83.8169284410886,
+            95.52260952621951,
+            21.599209993705752
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 5139,
+          "position": [
+            83.39827370355806,
+            88.19017755559418,
+            23.03253470448112
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 3481,
+      "end_tick": 6223,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 3,
+      "side": "attack",
+      "calls": 2025,
+      "alive_calls": 1805,
+      "visible_calls": 0,
+      "move_calls": 988,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 6885,
+      "first_move_tick": 7065,
+      "escapes": [
+        {
+          "tick": 8334,
+          "position": [
+            131.2901685098543,
+            54.54210532742147,
+            20.82418261126966
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 8613,
+          "position": [
+            131.4435459046114,
+            54.74652562931731,
+            21.98058711116291
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 8862,
+          "position": [
+            131.2749858583378,
+            54.53333969140565,
+            20.823002026117496
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 9045,
+          "position": [
+            131.57385565217538,
+            54.70587761463887,
+            20.848034811906707
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "bomb_explode",
+      "start_tick": 6523,
+      "end_tick": 12298,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 4,
+      "side": "attack",
+      "calls": 1859,
+      "alive_calls": 1284,
+      "visible_calls": 7,
+      "move_calls": 1217,
+      "fire_calls": 1,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 12960,
+      "first_move_tick": 13140,
+      "escapes": [
+        {
+          "tick": 13293,
+          "position": [
+            81.03968376435165,
+            84.9503482135123,
+            23.008220446182317
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 13803,
+          "position": [
+            83.39168232666084,
+            87.68246035206542,
+            23.15543444597228
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 14118,
+          "position": [
+            81.87629499367041,
+            83.85649988249008,
+            23.245666305155886
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 14817,
+          "position": [
+            80.5916407198026,
+            71.48347347026089,
+            23.031193733323747
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 12598,
+      "end_tick": 17875,
+      "kills": 1,
+      "deaths": 1,
+      "assists": 0,
+      "shots": 1,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 35.26976595248254,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 5,
+      "side": "attack",
+      "calls": 1121,
+      "alive_calls": 901,
+      "visible_calls": 34,
+      "move_calls": 807,
+      "fire_calls": 19,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 18537,
+      "first_move_tick": 18717,
+      "escapes": [
+        {
+          "tick": 19344,
+          "position": [
+            95.63928371829847,
+            57.35136084626581,
+            24.16510996185303
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 20253,
+          "position": [
+            135.47023697697082,
+            48.87869750331222,
+            20.78313695293376
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 18175,
+      "end_tick": 21238,
+      "kills": 3,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 11,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 406.9411228281477,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 6,
+      "side": "attack",
+      "calls": 2520,
+      "alive_calls": 2300,
+      "visible_calls": 0,
+      "move_calls": 2240,
+      "fire_calls": 0,
+      "carry_calls": 2300,
+      "uses": {},
+      "first_live_tick": 21900,
+      "first_move_tick": 22080,
+      "escapes": [
+        {
+          "tick": 22446,
+          "position": [
+            83.39789660901616,
+            88.19708297214076,
+            23.030792493173088
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 22773,
+          "position": [
+            83.40974792047498,
+            91.95421835313425,
+            22.063286753299437
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 23271,
+          "position": [
+            83.39793961309522,
+            88.19629546122727,
+            23.030991179291064
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 23559,
+          "position": [
+            83.4097459711327,
+            91.98462154078273,
+            22.05524587850394
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 24060,
+          "position": [
+            83.39244460412836,
+            88.02690427642402,
+            23.073692462142528
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 24516,
+          "position": [
+            83.39188842387016,
+            87.80946311477099,
+            23.128522150310662
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 24759,
+          "position": [
+            83.39308317324964,
+            88.57343261931773,
+            22.93587873894116
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 24984,
+          "position": [
+            83.75285770902391,
+            95.5226088634381,
+            21.59909301220526
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 25443,
+          "position": [
+            83.3916858383584,
+            87.67225747110672,
+            23.157570866975266
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 25662,
+          "position": [
+            83.74900501400937,
+            95.52260911983967,
+            21.598040564661822
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 26214,
+          "position": [
+            83.39167813652897,
+            87.69458417284393,
+            23.152895784853243
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 26646,
+          "position": [
+            83.39794405787028,
+            88.19621406661155,
+            23.0310117148544
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 26889,
+          "position": [
+            83.39311491100936,
+            88.5703170810776,
+            22.936664444698508
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 27114,
+          "position": [
+            83.75299421968441,
+            95.52260912373963,
+            21.59912749790852
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 27612,
+          "position": [
+            83.39188820358758,
+            87.84914787827948,
+            23.118515045696395
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 28737,
+          "position": [
+            133.80797809579158,
+            93.17459509630994,
+            18.035387537083427
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": false,
+      "end_reason": "timeout",
+      "start_tick": 21538,
+      "end_tick": 28798,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 7,
+      "side": "attack",
+      "calls": 1236,
+      "alive_calls": 1016,
+      "visible_calls": 41,
+      "move_calls": 915,
+      "fire_calls": 23,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 29460,
+      "first_move_tick": 29640,
+      "escapes": [
+        {
+          "tick": 30897,
+          "position": [
+            131.29258572884765,
+            54.54350089801412,
+            20.824370571379923
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 31176,
+          "position": [
+            131.3611758778553,
+            54.58310111536791,
+            20.829704060818504
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 29098,
+      "end_tick": 32506,
+      "kills": 3,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 13,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 376.0329081846937,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 8,
+      "side": "attack",
+      "calls": 934,
+      "alive_calls": 714,
+      "visible_calls": 0,
+      "move_calls": 654,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 33168,
+      "first_move_tick": 33348,
+      "escapes": [
+        {
+          "tick": 33504,
+          "position": [
+            81.90019895273322,
+            84.2728834427734,
+            23.237657896149237
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 34095,
+          "position": [
+            83.3960928180555,
+            88.27800088425761,
+            23.01038349478894
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 34386,
+          "position": [
+            81.68310520987917,
+            86.26345710218696,
+            22.969438254791765
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 32806,
+      "end_tick": 35308,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 9,
+      "side": "attack",
+      "calls": 1941,
+      "alive_calls": 1721,
+      "visible_calls": 17,
+      "move_calls": 893,
+      "fire_calls": 12,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 35970,
+      "first_move_tick": 36150,
+      "escapes": [
+        {
+          "tick": 37401,
+          "position": [
+            131.29258232211626,
+            54.54349893115298,
+            20.824370306476492
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 37584,
+          "position": [
+            131.55069662531386,
+            54.6925067922398,
+            20.846027815565872
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "bomb_explode",
+      "start_tick": 35608,
+      "end_tick": 41133,
+      "kills": 1,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 7,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 218.26416457445927,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 10,
+      "side": "attack",
+      "calls": 2520,
+      "alive_calls": 2300,
+      "visible_calls": 5,
+      "move_calls": 2235,
+      "fire_calls": 0,
+      "carry_calls": 2300,
+      "uses": {},
+      "first_live_tick": 41793,
+      "first_move_tick": 41973,
+      "escapes": [
+        {
+          "tick": 42354,
+          "position": [
+            83.39897201346419,
+            88.13558544518321,
+            23.046302598961734
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 42621,
+          "position": [
+            83.40974523839667,
+            91.99606617134882,
+            22.05221906303182
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 43098,
+          "position": [
+            83.39860359761732,
+            88.10666668870917,
+            23.053594007246506
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 43317,
+          "position": [
+            83.83479912498268,
+            95.52260952695241,
+            21.599209993705752
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 43788,
+          "position": [
+            83.39188779182611,
+            87.99937898635261,
+            23.080632033639166
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 44133,
+          "position": [
+            83.39828037256676,
+            88.19005543397148,
+            23.03256551531964
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 45228,
+          "position": [
+            133.79125587515375,
+            93.18091434256,
+            17.831143834119533
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 45780,
+          "position": [
+            133.8834366113188,
+            93.18132289086502,
+            17.829255797561512
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 46104,
+          "position": [
+            132.17038565967334,
+            93.16836123411142,
+            16.952109902725223
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 46596,
+          "position": [
+            133.87891604549864,
+            93.18124525958375,
+            17.831191445510253
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 47211,
+          "position": [
+            133.86439757964106,
+            93.17212522994288,
+            18.251779314013607
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 47772,
+          "position": [
+            133.89624255553392,
+            93.18157598970545,
+            17.82271058946178
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 48390,
+          "position": [
+            133.81290077165934,
+            93.17220099304738,
+            18.181270550170066
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": false,
+      "end_reason": "timeout",
+      "start_tick": 41433,
+      "end_tick": 48693,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 11,
+      "side": "attack",
+      "calls": 924,
+      "alive_calls": 529,
+      "visible_calls": 9,
+      "move_calls": 460,
+      "fire_calls": 5,
+      "carry_calls": 529,
+      "uses": {},
+      "first_live_tick": 49353,
+      "first_move_tick": 49533,
+      "escapes": [],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 48993,
+      "end_tick": 51463,
+      "kills": 0,
+      "deaths": 1,
+      "assists": 0,
+      "shots": 3,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 53.92771937125056,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 12,
+      "side": "attack",
+      "calls": 1006,
+      "alive_calls": 786,
+      "visible_calls": 0,
+      "move_calls": 726,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 52125,
+      "first_move_tick": 52305,
+      "escapes": [
+        {
+          "tick": 52710,
+          "position": [
+            83.39400440370757,
+            88.48300094141823,
+            22.95868465065456
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 52926,
+          "position": [
+            83.39904287824602,
+            88.14113478071401,
+            23.044903421946408
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 53397,
+          "position": [
+            83.39533052351354,
+            88.35573631557237,
+            22.990766069582364
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 53616,
+          "position": [
+            83.42002295823214,
+            92.57725210313947,
+            23.16726147205453
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 54111,
+          "position": [
+            84.70673533645777,
+            96.92897583045179,
+            20.03821445232958
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [],
+      "premature_patrol_flips": 0,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "elimination",
+      "start_tick": 51763,
+      "end_tick": 54481,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 13,
+      "side": "defend",
+      "calls": 2520,
+      "alive_calls": 648,
+      "visible_calls": 38,
+      "move_calls": 550,
+      "fire_calls": 7,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 55143,
+      "first_move_tick": 55323,
+      "escapes": [
+        {
+          "tick": 55572,
+          "position": [
+            152.90110021783858,
+            92.2947003991477,
+            16.753271453025608
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 55833,
+          "position": [
+            158.71580079783337,
+            87.75926483984243,
+            17.178286573746593
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 56097,
+          "position": [
+            158.894034249648,
+            87.6561289054848,
+            17.18893332325149
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [
+        {
+          "tick": 56583,
+          "round_seconds": 30.033333333333335,
+          "from_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "to_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "distance_to_previous_goal_m": 11.584731237507315,
+          "bomb_state": "unknown"
+        }
+      ],
+      "premature_patrol_flips": 1,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "timeout",
+      "start_tick": 54781,
+      "end_tick": 62041,
+      "kills": 1,
+      "deaths": 1,
+      "assists": 0,
+      "shots": 7,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 214.7508869286796,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 14,
+      "side": "defend",
+      "calls": 1380,
+      "alive_calls": 736,
+      "visible_calls": 6,
+      "move_calls": 670,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 62703,
+      "first_move_tick": 62883,
+      "escapes": [
+        {
+          "tick": 63024,
+          "position": [
+            157.98498902954103,
+            115.86011572847094,
+            19.413384210933728
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 63288,
+          "position": [
+            158.46421129014476,
+            118.16164820395576,
+            20.078193389487407
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 63810,
+          "position": [
+            160.6599001775062,
+            116.18055754115028,
+            20.707810014114383
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 64158,
+          "position": [
+            160.1581450217219,
+            116.26701756214415,
+            20.707810014114383
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [
+        {
+          "tick": 64143,
+          "round_seconds": 30.033333333333335,
+          "from_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "to_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "distance_to_previous_goal_m": 15.257257603370263,
+          "bomb_state": "unknown"
+        }
+      ],
+      "premature_patrol_flips": 1,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": false,
+      "end_reason": "elimination",
+      "start_tick": 62341,
+      "end_tick": 66181,
+      "kills": 0,
+      "deaths": 1,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 15,
+      "side": "defend",
+      "calls": 1379,
+      "alive_calls": 852,
+      "visible_calls": 0,
+      "move_calls": 792,
+      "fire_calls": 0,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 66843,
+      "first_move_tick": 67023,
+      "escapes": [
+        {
+          "tick": 68121,
+          "position": [
+            167.29082959495798,
+            60.314023546956825,
+            20.128803438549415
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 68328,
+          "position": [
+            163.2367952892266,
+            64.17978984411938,
+            20.07496638239262
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 68649,
+          "position": [
+            153.58568547501025,
+            62.34905028413452,
+            20.00028304178527
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 69267,
+          "position": [
+            155.56797415763702,
+            83.68525282248834,
+            16.937952431218857
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        }
+      ],
+      "near_goal_escapes": 1,
+      "patrol_flips": [
+        {
+          "tick": 68283,
+          "round_seconds": 30.033333333333335,
+          "from_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "to_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "distance_to_previous_goal_m": 5.699140088768753,
+          "bomb_state": "unknown"
+        }
+      ],
+      "premature_patrol_flips": 1,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": false,
+      "end_reason": "elimination",
+      "start_tick": 66481,
+      "end_tick": 70318,
+      "kills": 0,
+      "deaths": 1,
+      "assists": 0,
+      "shots": 0,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 0,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 16,
+      "side": "defend",
+      "calls": 2520,
+      "alive_calls": 2300,
+      "visible_calls": 35,
+      "move_calls": 2205,
+      "fire_calls": 3,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 70980,
+      "first_move_tick": 71160,
+      "escapes": [
+        {
+          "tick": 71301,
+          "position": [
+            157.96047217281273,
+            116.2466551634235,
+            17.96896288410121
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 71523,
+          "position": [
+            158.40089339739086,
+            118.12959215254814,
+            20.018920490085037
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 71820,
+          "position": [
+            157.57993175829003,
+            118.02016597767043,
+            18.80293690849635
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 72024,
+          "position": [
+            159.90234369457622,
+            121.87800305703081,
+            19.52067483063686
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 72231,
+          "position": [
+            153.64896501062407,
+            120.81097073146992,
+            18.741063600769383
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 72774,
+          "position": [
+            153.73248677183494,
+            116.93472310446234,
+            17.96810993515015
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 73290,
+          "position": [
+            152.7488382292329,
+            93.8917937924557,
+            16.770678880373698
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 73521,
+          "position": [
+            154.75093093804625,
+            93.43205109447126,
+            16.78656211818536
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 73845,
+          "position": [
+            152.93425868224477,
+            92.27124648035436,
+            16.75288934334425
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 74151,
+          "position": [
+            154.9997798343087,
+            88.80598012101846,
+            16.799473415257413
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 74334,
+          "position": [
+            147.81776188404928,
+            86.16832286089632,
+            16.948583541816863
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 75291,
+          "position": [
+            160.6599007355806,
+            116.18055824360354,
+            20.707810014738374
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 75495,
+          "position": [
+            160.45694468294465,
+            116.20917685145888,
+            20.707810014114383
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 75678,
+          "position": [
+            160.15705546778344,
+            116.23610961846263,
+            20.70781001422054
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 75915,
+          "position": [
+            158.71424662787106,
+            118.4456685865271,
+            18.71388752575652
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 76692,
+          "position": [
+            155.59458476957855,
+            80.41641487588265,
+            17.124144165271044
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 76875,
+          "position": [
+            152.54226412762569,
+            80.67315268337764,
+            17.207541109392867
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 77577,
+          "position": [
+            161.6496675599395,
+            62.45324935669306,
+            19.989671444824783
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 77760,
+          "position": [
+            161.64966755996377,
+            62.45324935670563,
+            19.989671444872524
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [
+        {
+          "tick": 72420,
+          "round_seconds": 30.033333333333335,
+          "from_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "to_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "distance_to_previous_goal_m": 11.364480704321268,
+          "bomb_state": "unknown"
+        },
+        {
+          "tick": 74271,
+          "round_seconds": 60.88333333333333,
+          "from_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "to_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "distance_to_previous_goal_m": 32.384572409491284,
+          "bomb_state": "unknown"
+        },
+        {
+          "tick": 76035,
+          "round_seconds": 90.28333333333333,
+          "from_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "to_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "distance_to_previous_goal_m": 14.485013548835282,
+          "bomb_state": "unknown"
+        }
+      ],
+      "premature_patrol_flips": 3,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "timeout",
+      "start_tick": 70618,
+      "end_tick": 77878,
+      "kills": 1,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 3,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 48.49903039845498,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 17,
+      "side": "defend",
+      "calls": 1956,
+      "alive_calls": 560,
+      "visible_calls": 14,
+      "move_calls": 486,
+      "fire_calls": 11,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 78540,
+      "first_move_tick": 78720,
+      "escapes": [
+        {
+          "tick": 78825,
+          "position": [
+            155.8543231100765,
+            105.65604399025835,
+            16.826156778188537
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 79107,
+          "position": [
+            160.84392102269263,
+            108.43607314883835,
+            16.94460315234853
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 0,
+      "patrol_flips": [
+        {
+          "tick": 79998,
+          "round_seconds": 30.333333333333332,
+          "from_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "to_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "distance_to_previous_goal_m": 15.649876667505994,
+          "bomb_state": "unknown"
+        }
+      ],
+      "premature_patrol_flips": 1,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": false,
+      "end_reason": "bomb_explode",
+      "start_tick": 78178,
+      "end_tick": 83748,
+      "kills": 1,
+      "deaths": 1,
+      "assists": 0,
+      "shots": 6,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 117.26864767290458,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    },
+    {
+      "round": 18,
+      "side": "defend",
+      "calls": 2420,
+      "alive_calls": 2300,
+      "visible_calls": 19,
+      "move_calls": 2221,
+      "fire_calls": 7,
+      "carry_calls": 0,
+      "uses": {},
+      "first_live_tick": 84408,
+      "first_move_tick": 84588,
+      "escapes": [
+        {
+          "tick": 85059,
+          "position": [
+            160.6599157698276,
+            116.18065069238365,
+            21.06594160417438
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 85560,
+          "position": [
+            160.16529309536108,
+            116.70868155168456,
+            21.681037092085617
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 85842,
+          "position": [
+            157.3547011987624,
+            116.29225992408625,
+            17.881745597082027
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 87348,
+          "position": [
+            167.41982452761044,
+            60.20763383875792,
+            20.133007805662423
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 87609,
+          "position": [
+            167.39225413855945,
+            60.40706749787835,
+            20.130590728236005
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        },
+        {
+          "tick": 89085,
+          "position": [
+            160.1686833652051,
+            116.67935124978429,
+            21.81029959922625
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 89433,
+          "position": [
+            160.659940559977,
+            116.18064720830247,
+            21.21739507571829
+          ],
+          "goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ]
+        },
+        {
+          "tick": 90966,
+          "position": [
+            167.31190765861794,
+            60.27536956123111,
+            20.130241290326293
+          ],
+          "goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ]
+        }
+      ],
+      "near_goal_escapes": 3,
+      "patrol_flips": [
+        {
+          "tick": 85962,
+          "round_seconds": 31.9,
+          "from_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "to_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "distance_to_previous_goal_m": 14.760735653838601,
+          "bomb_state": "unknown"
+        },
+        {
+          "tick": 87729,
+          "round_seconds": 61.35,
+          "from_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "to_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "distance_to_previous_goal_m": 5.17130570603396,
+          "bomb_state": "unknown"
+        },
+        {
+          "tick": 89553,
+          "round_seconds": 91.75,
+          "from_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "to_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "distance_to_previous_goal_m": 11.453291569718333,
+          "bomb_state": "unknown"
+        },
+        {
+          "tick": 91248,
+          "round_seconds": 120.0,
+          "from_goal": [
+            167.3735,
+            60.2617,
+            20.2032
+          ],
+          "to_goal": [
+            166.69400000000002,
+            130.0736,
+            22.54
+          ],
+          "distance_to_previous_goal_m": 1.5278361543695167,
+          "bomb_state": "unknown"
+        }
+      ],
+      "premature_patrol_flips": 3,
+      "hidden_after_seen_calls": 0,
+      "hidden_after_seen_episodes": 0,
+      "known_planted_calls": 0,
+      "v0_different_calls": 0,
+      "v0_different_attack_calls": 0,
+      "v0_different_nonplanted_calls": 0,
+      "new_target_during_escape": [],
+      "defense_planted_alive_calls": 0,
+      "defuse_uses_hidden": 0,
+      "hidden_goal_other_move_calls": 0,
+      "hidden_other_goal_escape_calls": 0,
+      "hidden_cached_goal_move_calls": 0,
+      "win": true,
+      "end_reason": "timeout",
+      "start_tick": 84048,
+      "end_tick": 91308,
+      "kills": 1,
+      "deaths": 0,
+      "assists": 0,
+      "shots": 4,
+      "plants": 0,
+      "defuse_starts": 0,
+      "defuses": 0,
+      "damage": 100.30699025039135,
+      "alive_at_losing_explosion": false,
+      "extra_departure_wait_seconds": 3.0
+    }
+  ],
+  "memory_episodes": [],
+  "near_zero_xy_move_seconds": 104.35000000000001,
+  "blocked_episodes": [
+    {
+      "round": 16,
+      "start_tick": 77514,
+      "end_tick": 77781,
+      "seconds": 4.449999999999992,
+      "position": [
+        161.64966755976008,
+        62.453249356560406,
+        19.989671444821035
+      ],
+      "enemy_seen_calls": 0,
+      "escape_starts": 2,
+      "bbox_min": [
+        161.64966755993578,
+        62.45324935668963,
+        19.989671444824694
+      ],
+      "bbox_max": [
+        161.6496675603455,
+        62.45324935711503,
+        19.989671445569094
+      ]
+    }
+  ],
+  "screenshot_checked": true,
+  "screenshot_rounded_rating_change": 34,
+  "departure_wait_distribution": {
+    "3.0": 18
+  },
+  "v1_code_sha256": "92a052c40cc47424de0a0281698c7e4cd7334910d986724f1cc80da69186d4e9",
+  "job_id": "00460e54-6029-41a7-8294-950d124c2e65",
+  "platform_participant": {
+    "seat": 7,
+    "agent_id": "36b8d7b9-67a7-471f-ba52-4c144c341415",
+    "version_id": "ba765f55-4754-4d55-b738-60507f944152",
+    "source_hash": "7a1569f9d97d79823a0e93bc2077fe660a06825fdf95eaedde0203d890ec784e",
+    "team": 1,
+    "role": 0
+  }
+}
