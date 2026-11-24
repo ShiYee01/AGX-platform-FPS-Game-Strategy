@@ -12,11 +12,13 @@ from check_fps_v1 import equivalent, policy, validate
 
 ROOT = Path(__file__).resolve().parents[1]
 UPDATE = ROOT/'策略更新/V2-稳定目标与分级脱困'
+# Since V3 the entry point is no longer V2; check the frozen V2 snapshot.
+V2_SOURCE = ROOT/'策略更新/V3-可达寻路与开火门限/agent-v2.py'
 
 
 def check(log):
     v1 = policy(UPDATE/'agent-v1.py')
-    v2 = policy(ROOT/'agent/agent.py')
+    v2 = policy(V2_SOURCE)
     rows = size = faults = baseline_mismatches = changed = 0
     memory_calls = memory_mismatches = premature_switches = switches = 0
     route_wait_calls = escapes = 0
@@ -113,7 +115,7 @@ if __name__ == '__main__':
                   total_decisions=sum(r['decision_rows'] for r in results),
                   code_sha256={name: hashlib.sha256(path.read_bytes()).hexdigest()
                                for name, path in [('v1', UPDATE/'agent-v1.py'),
-                                                  ('v2', ROOT/'agent/agent.py')]},
+                                                  ('v2', V2_SOURCE)]},
                   limitations='All positions and events remain recorded V1 outcomes. '
                   'Changed V2 outputs are not applied to a game engine. '
                   'Do not interpret rotation/recovery counts as future match results. '

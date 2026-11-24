@@ -1,9 +1,12 @@
 # AGX FPS 爆破模式策略
 
-当前开发版本：**V2-稳定目标与分级脱困**，参赛入口为 [`agent/agent.py`](agent/agent.py)。保留V1炸弹记忆，取消未到点就定时换点，并在连续脱困失败后暂时避开失败导航连接。V2尚无真实比赛结果。
+当前开发版本：**V3-可达寻路与开火门限**，参赛入口为 [`agent/agent.py`](agent/agent.py)。路线改为按米计价的A*，不走爬不上的台阶（修复Mirage/Dust2守包时到不了包点）；包位置未知时按炸弹提示音距离选包点回防；开火要求瞄准误差、扩散和蹲下都到位。V3尚无实战结果，需在AGX上传并选中后才会参赛。
+
+V2（平台显示v4）已实战，对局19～28为4胜5负1平，分析见[本地分析结果](交接/2026-11-24-分析结果.md)。
 
 | 内容 | 位置 |
 | --- | --- |
+| V3修改依据、参数和验证 | [策略更新/V3-可达寻路与开火门限](策略更新/V3-可达寻路与开火门限/修改说明.md) |
 | V2修改依据、参数和验证 | [策略更新/V2-稳定目标与分级脱困](策略更新/V2-稳定目标与分级脱困/修改说明.md) |
 | 原V1完整源码 | [agent-v1.py](策略更新/V2-稳定目标与分级脱困/agent-v1.py) |
 | 对局12～18及评分截图 | [比赛日志索引](比赛日志/README.md)，实际使用V1，4胜3负 |
@@ -19,7 +22,7 @@
 
 ```sh
 python3 -m unittest discover -s tests -v
-python3 tools/check_fps_v2.py
+python3 tools/check_fps_v3.py --output /tmp/fps-v3-check.json
 python3 tools/pack.py --output submission.zip
 ```
 

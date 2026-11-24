@@ -1,0 +1,65 @@
+{
+  "version": "V3-可达寻路与开火门限",
+  "date": "2026-11-24",
+  "unit_tests": {
+    "passed": 35,
+    "failed": 0,
+    "scope": "21 V2 tests (objective memory + navigation) + 14 V3 tests (routes, retake, fire gate, stagger)"
+  },
+  "fixed_observation": {
+    "matches": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "decisions": 554599,
+    "invalid_actions": 0,
+    "exceptions": 0,
+    "changed_vs_v2": 133748,
+    "recorded_shots": {
+      "all": 1902,
+      "hits": 947,
+      "hit_rate": 0.498,
+      "v3_would_also_fire": 902,
+      "v3_kept_hits": 660,
+      "v3_kept_hit_rate": 0.732
+    },
+    "v2_fire_held_by_v3_gate": 1943,
+    "retake_unknown_position_decisions": 13113,
+    "note": "Recorded V0/V1 positions; V3 actions are not applied to a game engine."
+  },
+  "routes_with_unclimbable_rise_gt_1_4m": {
+    "v2": 5,
+    "v3": 0,
+    "scope": "spawn->A/B on five maps plus three Mirage hold points from local analysis"
+  },
+  "v2_sha256": "8b7769dbecac79a8a5553ad60fd86e59c2c536f7c60fa784733047fff82e2ac8",
+  "v3_sha256": "aae38303b4401378a7c0aa48ddd726a0f34b82dfcf0ad6f7ba3d1fa475f2af10",
+  "v3_source_bytes": 20160,
+  "package": {
+    "filename": "agx-fps-v3.zip",
+    "sha256": "4edcc3337d4406eb56739c4799ad0ae52897440be83f5f8db0aa88b1bffd6c38",
+    "bytes": 5931,
+    "entries": [
+      "agent.py"
+    ]
+  },
+  "local_max_act_ms": 9.918,
+  "local_max_match_cpu_s": 0.809,
+  "real_v3_match_results": null
+}

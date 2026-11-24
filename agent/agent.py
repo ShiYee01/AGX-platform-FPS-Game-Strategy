@@ -1,7 +1,19 @@
-"""FPS V2: stable objectives and staged recovery, with V1 bomb memory."""
+"""FPS V3: climbable weighted routes, informed retakes and gated firing.
+
+Keeps V1 bomb memory and V2 staged recovery. Strategy parameters below are
+our own choices measured from archived matches, not platform rules.
+"""
 import math
 import gc
-from collections import deque
+import heapq
+
+# Logged jumps peak about 1.44 m above the take-off floor (3,086 jumps,
+# matches 01-18), so steeper rises than this cannot be climbed.
+MAX_CLIMB = 1.4
+JUMP_RISE = 0.55        # rises above this on a steep edge need a jump
+STEEP = 0.6             # rise / horizontal run separating ledges from ramps
+JUMP_COST = 4.0         # metres of detour we accept to avoid one jump
+RETAKE_CHECK_TICKS = 30  # look around an empty site this long before leaving
 
 
 def clip(value):
@@ -30,6 +42,9 @@ class Player:
         self.escape_until, self.escape_yaw, self.escapes = 0, 0.0, 0
         self.recovery_jump = False
         self.planted_bomb_position, self.planted_bomb_fuse = None, None
+        self.ruled_out_sites, self.retake_site = set(), None
+        self.bomb_band, self.last_fire_tick = None, -99
+        self.combat_start = None
 
     def load_map(self, row):
         self.sites = row["sites"]
@@ -37,10 +52,35 @@ class Player:
                       for n in row["nav"]["nodes"]}
         self.edges = {key: [] for key in self.nodes}
         for edge in row["nav"]["edges"]:
-            if edge["kind"] != "ladder":
-                self.edges[edge["from"]].append(edge["to"])
-                if edge["kind"] == "walk":
-                    self.edges[edge["to"]].append(edge["from"])
+            kind = edge["kind"]
+            if kind == "ladder":
+                continue
+            pairs = [(edge["from"], edge["to"])]
+            if kind == "walk":
+                pairs.append((edge["to"], edge["from"]))
+            for a, b in pairs:
+                cost = self.edge_cost(self.nodes[a], self.nodes[b], kind)
+                if cost is not None:
+                    self.edges[a].append((b, cost))
+
+    @staticmethod
+    def edge_cost(a, b, kind):
+        """Metres plus a jump penalty; None for a ledge we cannot climb."""
+        run = math.hypot(b[0] - a[0], b[1] - a[1])
+        rise = b[2] - a[2]
+        steep = rise > STEEP * run
+        if kind != "drop" and steep and rise > MAX_CLIMB:
+            return None
+        cost = math.sqrt(run * run + rise * rise)
+        if steep and rise > JUMP_RISE:
+            cost += JUMP_COST
+        return cost
+
+    def nearest_node(self, point, candidates):
+        # Vertical offset counts double so a floor above or below loses.
+        return min(candidates, key=lambda k: (
+            (self.nodes[k][0] - point[0])**2 + (self.nodes[k][1] - point[1])**2
+            + 4 * (self.nodes[k][2] - point[2])**2))
 
     def reset_navigation(self):
         self.path, self.path_ids, self.path_from = [], [], None
@@ -63,18 +103,28 @@ class Player:
         candidates = [n for n in self.nodes if n not in self.blocked_nodes]
         if not candidates:
             return []
-        first = min(candidates,
-                    key=lambda k: distance(start, self.nodes[k]))
-        last = min(candidates,
-                   key=lambda k: distance(goal, self.nodes[k]))
-        queue, parent = deque([first]), {first: None}
-        while queue and last not in parent:
-            here = queue.popleft()
-            for there in self.edges[here]:
-                if (there not in parent and there not in self.blocked_nodes
-                        and (here, there) not in self.blocked_edges):
-                    parent[there] = here
-                    queue.append(there)
+        first = self.nearest_node(start, candidates)
+        last = self.nearest_node(goal, candidates)
+        # A* on metres (V2 used breadth-first hop counts, which preferred
+        # short-cuts over unclimbable boxes on the CS2 maps).
+        target = self.nodes[last]
+        parent, best = {first: None}, {first: 0.}
+        heap, done = [(distance(self.nodes[first], target), 0., first)], set()
+        while heap:
+            _, cost, here = heapq.heappop(heap)
+            if here == last:
+                break
+            if here in done:
+                continue
+            done.add(here)
+            for there, step in self.edges[here]:
+                if there in self.blocked_nodes or (here, there) in self.blocked_edges:
+                    continue
+                total = cost + step
+                if total < best.get(there, math.inf):
+                    best[there], parent[there] = total, here
+                    heapq.heappush(heap, (total + distance(self.nodes[there], target),
+                                          total, there))
         if last not in parent:
             # A disconnected graph is not permission to run through a wall.
             return []
@@ -103,6 +153,47 @@ class Player:
             radius = max(1., min(3., site['radius'] * .5))
             arrived = distance(pos, site['center']) < radius
         return site, arrived
+
+    def retake_target(self, o):
+        """Pick a site to check while a planted bomb's position is unknown."""
+        m = o["me"]
+        pos = [m["x"], m["y"], m["z"]]
+        for sound in o.get("sounds") or ():
+            if str(sound.get("type", "")).startswith("bomb_beep"):
+                self.bomb_band = sound.get("distance_band")
+        options = [i for i in range(len(self.sites)) if i not in self.ruled_out_sites]
+        if not options:
+            self.ruled_out_sites = set()
+            options = list(range(len(self.sites)))
+        # Beep bands were checked against real plant positions in matches
+        # 01-18: near < 8 m, mid < 20 m, far >= 20 m.
+        def gap(i):
+            return distance(pos, self.sites[i]["center"])
+        if self.bomb_band in ("near", "mid"):
+            heard = [i for i in options if gap(i) < 22 + self.sites[i]["radius"]]
+        elif self.bomb_band == "far":
+            heard = [i for i in options if gap(i) > 18 - self.sites[i]["radius"]]
+        else:
+            heard = options
+        options = heard or options
+        if self.retake_site not in options:
+            # Nearest site first; on a tie keep the V2 patrol assignment.
+            preferred = self.patrol_index % len(self.sites)
+            self.retake_site = min(options, key=lambda i: (round(gap(i), 1), i != preferred))
+            self.site_arrival_tick = None
+        site = self.sites[self.retake_site]
+        radius = max(1., min(3., site["radius"] * .5))
+        if gap(self.retake_site) >= radius:
+            self.site_arrival_tick = None
+            return site, False
+        if self.site_arrival_tick is None:
+            self.site_arrival_tick = o["match_tick"]
+        elif (o["match_tick"] - self.site_arrival_tick >= RETAKE_CHECK_TICKS
+              and self.bomb_band != "near"):
+            # Standing in the site without seeing the bomb: try the other one.
+            self.ruled_out_sites.add(self.retake_site)
+            self.retake_site, self.site_arrival_tick = None, None
+        return site, True
 
     def remember_planted_bomb(self, bomb):
         """Keep only a planted position actually present in our observation."""
@@ -152,11 +243,24 @@ class Player:
                      and not gun["reload_until"])
         # Release the trigger between pistol shots.
         trigger = (action["weapon_slot"] == 0
-                   or (o["match_tick"] // 3) % 4 == 0)
+                   or o["match_tick"] - self.last_fire_tick > 3)
+        # Fire gate from archived shots (matches 02-18): shots taken with aim
+        # error inside the target's angular size, settled spread and a
+        # finished crouch hit 73% versus 50% for all recorded shots; shots
+        # fired before the crouch registered hit 0 of 127.
+        span = max(0.1, math.hypot(dx, dy))
+        tolerance = max(.008, min(.04, .25 / span))
+        settled = (gun.get("inaccuracy") or 0.) <= max(.01, .2 / span) if gun else False
+        # Should a crouch never register (ladder, low ceiling), stand and shoot.
+        if self.combat_start is None:
+            self.combat_start = o["match_tick"]
+        crouched = m["crouch"] or o["match_tick"] - self.combat_start >= 9
+        fire = bool(ready and trigger and settled and crouched
+                    and abs(yaw) < tolerance and abs(pitch) < tolerance)
+        if fire:
+            self.last_fire_tick = o["match_tick"]
         action.update(yaw_rate=clip(yaw / 0.15),
-                      pitch_rate=clip(pitch / 0.1), crouch=True,
-                      fire=ready and trigger and abs(yaw) < 0.04
-                      and abs(pitch) < 0.04)
+                      pitch_rate=clip(pitch / 0.1), crouch=True, fire=fire)
         return action
 
     def recovery_action(self, o, action):
@@ -253,6 +357,8 @@ class Player:
             self.patrol_index = o["round_index"] + o["seat"] % 2
             self.site_arrival_tick = None
             self.planted_bomb_position, self.planted_bomb_fuse = None, None
+            self.ruled_out_sites, self.retake_site, self.bomb_band = set(), None, None
+            self.last_fire_tick, self.combat_start = -99, None
         bomb = o["bomb"]
         new_bomb_target = self.remember_planted_bomb(bomb)
         if o["side"] == "defend" and new_bomb_target:
@@ -297,6 +403,8 @@ class Player:
         if m["carrying_bomb"] and at_site:
             self.pause_navigation()
             return dict(action, use="plant")
+        if not o["visible"] or m["blind_ticks"]:
+            self.combat_start = None
         if o["visible"] and not m["blind_ticks"]:
             self.pause_navigation()
             self.site_arrival_tick = None
@@ -305,14 +413,21 @@ class Player:
                 and distance(pos, goal) < 8):
             self.pause_navigation()
             return dict(action, yaw_rate=0.15, walk=True)
-        if patrol:
+        if patrol and planted and o["side"] == "defend":
+            # Bomb down somewhere unseen: check one site briefly, then the other.
+            site, arrived = self.retake_target(o)
+            goal = list(site["center"])
+            if arrived:
+                self.pause_navigation()
+                return dict(action, yaw_rate=.15, walk=True)
+        elif patrol:
             site, arrived = self.patrol_site(o)
             goal = list(site["center"])
             if arrived:
                 self.pause_navigation()
                 return dict(action, yaw_rate=.15, walk=True)
         # Give each teammate room to leave its spawn before entering a narrow route.
-        if o["round_tick"] < 360 + (o["seat"] % 5) * 90:
+        if o["round_tick"] < 360 + (o["seat"] % 5) * 45:
             self.pause_navigation()
             return action
         return self.move(o, goal, action)

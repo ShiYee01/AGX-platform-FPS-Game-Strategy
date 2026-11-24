@@ -39,6 +39,7 @@ KNOWN_VERSION_IDS = {
     '7d30f64b-e6f0-4298-92ab-63e8910192a6': 'V0 (pre-course test, match 01)',
     'eda92062-7f1b-4b58-93d3-a4ad3569f50b': 'V0 (matches 02-11)',
     'ba765f55-4754-4d55-b738-60507f944152': 'V1 (matches 12-18)',
+    'c7cb4132-ffeb-4352-957b-6941fe40491b': 'V2 (platform "v4", matches 19-28)',
 }
 TPS = 60
 STALL_TICKS = 180          # 3 s commanded movement with < STALL_DIST progress
@@ -286,6 +287,12 @@ def main():
     v2 = find_v2()
     if v2:
         candidates['V2'] = v2
+    current = ROOT/'agent/agent.py'
+    if hashlib.sha256(current.read_bytes()).hexdigest() != V2_SHA:
+        # Label the current entry by its docstring, e.g. "FPS V3: ...".
+        head = current.read_text(encoding='utf-8').split('\n', 1)[0]
+        label = next((w.rstrip(':') for w in head.split() if w.startswith('V') and w[1:2].isdigit()), 'current')
+        candidates[label] = current
     else:
         print('warning: no file with the V2 sha256 found; V2 reproduction skipped')
     results = []
