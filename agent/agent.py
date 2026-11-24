@@ -1,7 +1,8 @@
-"""FPS V3: climbable weighted routes, informed retakes and gated firing.
+"""FPS V4: full-speed movement, pre-aimed attack threats, fire gate eased under fire.
 
-Keeps V1 bomb memory and V2 staged recovery. Strategy parameters below are
-our own choices measured from archived matches, not platform rules.
+Keeps V3 climbable routes, retakes and fire gate, V2 staged recovery and V1
+bomb memory. Strategy parameters below are our own choices measured from
+archived matches, not platform rules.
 """
 import math
 import gc
@@ -14,6 +15,21 @@ JUMP_RISE = 0.55        # rises above this on a steep edge need a jump
 STEEP = 0.6             # rise / horizontal run separating ledges from ramps
 JUMP_COST = 4.0         # metres of detour we accept to avoid one jump
 RETAKE_CHECK_TICKS = 30  # look around an empty site this long before leaving
+# Speed is proportional to the move input (0.75 gave 4.11 m/s with a rifle,
+# about 75% of its maximum) and 0.75 was not quiet, so walk at full input.
+MOVE = 1.0
+UNDER_FIRE_TICKS = 30   # after losing HP this recently, shoot with the V2 gate
+WATCH_RADIUS = 40.0     # pre-aim a known threat point within this range...
+WATCH_MIN = 6.0         # ...unless we are already standing on it
+# Where defenders shot us from while we attacked in matches 19-28 (shooter
+# fire origins from our own public events; offline analysis, not live input).
+# Points are (x, y, z of the shooter's eye).
+THREATS = {
+    "molo-r3-v54": [(110.0, 47.0, 0.95), (60.0, 87.0, 2.15)],
+    "mirage-cs2-v54": [(92.4, 46.0, 17.35), (101.7, 47.6, 16.89)],
+    "borgo-r3-v54": [(34.0, 90.0, 1.3), (109.0, 96.0, 3.3)],
+    "nevaio-r3-v54": [(110.0, 83.0, 2.4)],
+}
 
 
 def clip(value):
@@ -45,6 +61,7 @@ class Player:
         self.ruled_out_sites, self.retake_site = set(), None
         self.bomb_band, self.last_fire_tick = None, -99
         self.combat_start = None
+        self.last_hp, self.hurt_tick = None, -99
 
     def load_map(self, row):
         self.sites = row["sites"]
@@ -195,6 +212,17 @@ class Player:
             self.retake_site, self.site_arrival_tick = None, None
         return site, True
 
+    def watch_point(self, o, pos):
+        """Nearest known threat to pre-aim while attacking, or None."""
+        if o.get("side") != "attack":
+            return None
+        best = None
+        for point in THREATS.get(o.get("map_id"), ()):
+            gap = math.hypot(point[0] - pos[0], point[1] - pos[1])
+            if WATCH_MIN < gap < WATCH_RADIUS and (best is None or gap < best[0]):
+                best = (gap, point)
+        return best and best[1]
+
     def remember_planted_bomb(self, bomb):
         """Keep only a planted position actually present in our observation."""
         previous = (self.planted_bomb_fuse, self.planted_bomb_position)
@@ -251,6 +279,11 @@ class Player:
         span = max(0.1, math.hypot(dx, dy))
         tolerance = max(.008, min(.04, .25 / span))
         settled = (gun.get("inaccuracy") or 0.) <= max(.01, .2 / span) if gun else False
+        if o["match_tick"] - self.hurt_tick <= UNDER_FIRE_TICKS:
+            # Being hit: waiting costs more than a less accurate shot (in
+            # matches 19-28 the enemy's first shot fell between the V2 and
+            # V3 first shots in 11 duels). Fall back to the V2 aim gate.
+            tolerance, settled = .04, True
         # Should a crouch never register (ladder, low ceiling), stand and shoot.
         if self.combat_start is None:
             self.combat_start = o["match_tick"]
@@ -302,10 +335,19 @@ class Player:
         dx, dy = point[0]-pos[0], point[1]-pos[1]
         heading = math.atan2(-dy, dx)
         yaw = angle(heading - m["yaw"])
-        action.update(move_forward=.75 * math.cos(yaw),
-                      move_right=-.75 * math.sin(yaw),
+        action.update(move_forward=MOVE * math.cos(yaw),
+                      move_right=-MOVE * math.sin(yaw),
                       yaw_rate=clip(yaw / .15),
                       pitch_rate=clip(-m["pitch"] / .1), walk=False)
+        threat = self.watch_point(o, pos)
+        if threat is not None:
+            # Keep walking the route but face where defenders shot us from.
+            tx, ty = threat[0] - pos[0], threat[1] - pos[1]
+            look = angle(math.atan2(-ty, tx) - m["yaw"])
+            eye = 0.95 if m.get("crouch") else 1.62
+            pitch = math.atan2(threat[2] - pos[2] - eye, max(.1, math.hypot(tx, ty)))
+            action.update(yaw_rate=clip(look / .15),
+                          pitch_rate=clip((pitch - m["pitch"]) / .1))
         # Small sideways motion alone does not demonstrate route progress.
         key = (self.path_from, self.path_ids[0], tuple(goal))
         remaining = distance(pos, point)
@@ -359,6 +401,11 @@ class Player:
             self.planted_bomb_position, self.planted_bomb_fuse = None, None
             self.ruled_out_sites, self.retake_site, self.bomb_band = set(), None, None
             self.last_fire_tick, self.combat_start = -99, None
+            self.last_hp, self.hurt_tick = None, -99
+        hp = o["me"].get("hp")
+        if self.last_hp is not None and hp is not None and hp < self.last_hp:
+            self.hurt_tick = o["match_tick"]
+        self.last_hp = hp
         bomb = o["bomb"]
         new_bomb_target = self.remember_planted_bomb(bomb)
         if o["side"] == "defend" and new_bomb_target:

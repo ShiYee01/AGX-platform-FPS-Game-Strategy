@@ -33,6 +33,8 @@ CANDIDATES = {
            'fe7f0d71b0817919fdc62831a77ec4ea6982e15441a157083579b19096946cc5'),
     'V1': (ROOT/'策略更新/V2-稳定目标与分级脱困/agent-v1.py',
            '92a052c40cc47424de0a0281698c7e4cd7334910d986724f1cc80da69186d4e9'),
+    'V3': (ROOT/'策略更新/V4-全速移动与危险点预瞄/agent-v3.py',
+           'aae38303b4401378a7c0aa48ddd726a0f34b82dfcf0ad6f7ba3d1fa475f2af10'),
 }
 V2_SHA = '8b7769dbecac79a8a5553ad60fd86e59c2c536f7c60fa784733047fff82e2ac8'
 KNOWN_VERSION_IDS = {

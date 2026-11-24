@@ -17,7 +17,8 @@ from check_fps_v1 import equivalent, validate
 
 ROOT = Path(__file__).resolve().parents[1]
 UPDATE = ROOT/'策略更新/V3-可达寻路与开火门限'
-V3_SOURCE = ROOT/'agent/agent.py'
+# Since V4 the entry point is no longer V3; check the frozen V3 snapshot.
+V3_SOURCE = ROOT/'策略更新/V4-全速移动与危险点预瞄/agent-v3.py'
 V2_SOURCE = UPDATE/'agent-v2.py'
 
 
@@ -28,9 +29,11 @@ def load(path):
     return scope
 
 
-def check(log):
-    v2, v3 = load(V2_SOURCE), load(V3_SOURCE)
+def check(log, previous=None, current=None, extra=None):
+    v2, v3 = load(previous or V2_SOURCE), load(current or V3_SOURCE)
     p3 = v3['_player']
+    if extra:
+        extra(p3)
     route = p3.route
     route_calls, route_seconds, route_max = [0], [0.], [0.]
 

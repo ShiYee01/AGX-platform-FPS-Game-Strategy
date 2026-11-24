@@ -1,0 +1,71 @@
+{
+  "version": "V4-全速移动与危险点预瞄",
+  "date": "2026-11-24",
+  "unit_tests": {
+    "passed": 41,
+    "failed": 0,
+    "scope": "21 V2 + 14 V3 + 6 V4 behavior tests"
+  },
+  "fixed_observation": {
+    "matches": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "decisions": 554599,
+    "invalid_actions": 0,
+    "exceptions": 0,
+    "changed_vs_v3": 234915,
+    "threat_watch_decisions": 8070,
+    "under_fire_decisions": 3323,
+    "recorded_shots": {
+      "all": 1902,
+      "hits": 947,
+      "hit_rate": 0.498,
+      "v4_would_also_fire": 1029,
+      "v4_kept_hits": 700,
+      "v4_kept_hit_rate": 0.68
+    },
+    "note": "Recorded positions; V4 actions are not applied to a game engine."
+  },
+  "evidence": {
+    "speed_at_input_0.75_rifle_mps": 4.11,
+    "speed_at_input_0.75_pistol_mps": 4.57,
+    "quiet_false_at_3_to_4.4_mps": 57664,
+    "quiet_true_at_3_to_4.4_mps": 165,
+    "diagonal_vs_forward_speed_mps": [
+      4.29,
+      4.1
+    ],
+    "source": "matches 01-18 in this repository"
+  },
+  "v3_sha256": "aae38303b4401378a7c0aa48ddd726a0f34b82dfcf0ad6f7ba3d1fa475f2af10",
+  "v4_sha256": "46dd27afaed89d26e02f005f63d74a4f47917481184344f79925013dc94397ee",
+  "v4_source_bytes": 22650,
+  "package": {
+    "filename": "agx-fps-v4.zip",
+    "sha256": "ab60e80a1b1f6d7f82a58c86726607728a619a3af8836908b7566208e1495b20",
+    "bytes": 6840,
+    "entries": [
+      "agent.py"
+    ]
+  },
+  "local_max_act_ms": 8.193,
+  "local_max_match_cpu_s": 0.817,
+  "real_v4_match_results": null
+}
