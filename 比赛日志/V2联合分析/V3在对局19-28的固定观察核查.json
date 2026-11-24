@@ -1,0 +1,315 @@
+{
+  "kind": "fixed_observation_check_not_simulation",
+  "code_sha256": {
+    "v2": "8b7769dbecac79a8a5553ad60fd86e59c2c536f7c60fa784733047fff82e2ac8",
+    "v3": "aae38303b4401378a7c0aa48ddd726a0f34b82dfcf0ad6f7ba3d1fa475f2af10"
+  },
+  "totals": {
+    "decisions": 350409,
+    "changed_vs_v2": 63504,
+    "retake_sites_ruled_out": 1,
+    "v3_fire_decisions": 617,
+    "recorded_fire_decisions": 1720,
+    "v2_fire_held_by_v3_gate": 1130,
+    "retake_unknown_position_decisions": 9382,
+    "retake_band_far": 8932,
+    "route_calls": 938,
+    "local_max_act_tick": 395682,
+    "retake_band_None": 6,
+    "retake_band_mid": 259,
+    "retake_band_near": 185
+  },
+  "invalid_actions": 0,
+  "exceptions": 0,
+  "recorded_shots": {
+    "all": 1116,
+    "hits": 523,
+    "hit_rate": 0.469,
+    "v3_would_also_fire": 476,
+    "v3_kept_hits": 350,
+    "v3_kept_hit_rate": 0.735
+  },
+  "max_local_act_ms": 4.55,
+  "max_local_first_act_ms": 0.011,
+  "max_route_ms": 4.504,
+  "max_match_local_cpu_s": 0.598,
+  "matches": [
+    {
+      "log": "比赛日志/对局19/training-39afd30f-02ca-4dff-8c7c-3582d09a1ef3.jsonl.gz",
+      "decisions": 38297,
+      "changed_vs_v2": 11941,
+      "retake_sites_ruled_out": 0,
+      "v3_fire_decisions": 54,
+      "recorded_fire_decisions": 80,
+      "v2_fire_held_by_v3_gate": 28,
+      "retake_unknown_position_decisions": 800,
+      "retake_band_far": 800,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 48,
+        "recorded_hits": 40,
+        "hit_rate": 0.833
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 33,
+        "recorded_hits": 28,
+        "hit_rate": 0.848
+      },
+      "route_calls": 157,
+      "route_cpu_s": 0.2892,
+      "route_max_ms": 3.043,
+      "local_cpu_s": 0.471,
+      "local_first_act_ms": 0.011,
+      "local_max_act_ms": 3.46,
+      "local_max_act_tick": 3
+    },
+    {
+      "log": "比赛日志/对局20/training-dd901ee3-6923-4622-8c6d-aed6012aabe3.jsonl.gz",
+      "decisions": 26420,
+      "changed_vs_v2": 3189,
+      "retake_sites_ruled_out": 0,
+      "v3_fire_decisions": 77,
+      "recorded_fire_decisions": 326,
+      "v2_fire_held_by_v3_gate": 254,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 192,
+        "recorded_hits": 80,
+        "hit_rate": 0.417
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 65,
+        "recorded_hits": 42,
+        "hit_rate": 0.646
+      },
+      "route_calls": 57,
+      "route_cpu_s": 0.0022,
+      "route_max_ms": 0.113,
+      "local_cpu_s": 0.106,
+      "local_first_act_ms": 0.007,
+      "local_max_act_ms": 0.126,
+      "local_max_act_tick": 68046
+    },
+    {
+      "log": "比赛日志/对局21/training-763421a2-5769-4d31-9511-a81e580cc7bb.jsonl.gz",
+      "decisions": 37061,
+      "changed_vs_v2": 4646,
+      "retake_sites_ruled_out": 0,
+      "v3_fire_decisions": 115,
+      "recorded_fire_decisions": 524,
+      "v2_fire_held_by_v3_gate": 412,
+      "retake_unknown_position_decisions": 201,
+      "retake_band_None": 6,
+      "retake_band_far": 195,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 382,
+        "recorded_hits": 73,
+        "hit_rate": 0.191
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 94,
+        "recorded_hits": 51,
+        "hit_rate": 0.543
+      },
+      "route_calls": 89,
+      "route_cpu_s": 0.0033,
+      "route_max_ms": 0.056,
+      "local_cpu_s": 0.132,
+      "local_first_act_ms": 0.004,
+      "local_max_act_ms": 0.089,
+      "local_max_act_tick": 543
+    },
+    {
+      "log": "比赛日志/对局22/training-6229d771-b6e4-459a-abb0-dc2e8159ba05.jsonl.gz",
+      "decisions": 23160,
+      "changed_vs_v2": 1729,
+      "retake_sites_ruled_out": 0,
+      "recorded_fire_decisions": 127,
+      "v2_fire_held_by_v3_gate": 75,
+      "v3_fire_decisions": 57,
+      "retake_unknown_position_decisions": 1178,
+      "retake_band_far": 1178,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 91,
+        "recorded_hits": 54,
+        "hit_rate": 0.593
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 43,
+        "recorded_hits": 37,
+        "hit_rate": 0.86
+      },
+      "route_calls": 32,
+      "route_cpu_s": 0.0014,
+      "route_max_ms": 0.069,
+      "local_cpu_s": 0.081,
+      "local_first_act_ms": 0.004,
+      "local_max_act_ms": 0.12,
+      "local_max_act_tick": 15438
+    },
+    {
+      "log": "比赛日志/对局23/training-8c08e700-ea57-4a2f-bc38-7665b82203bf.jsonl.gz",
+      "decisions": 22771,
+      "changed_vs_v2": 2547,
+      "retake_sites_ruled_out": 0,
+      "recorded_fire_decisions": 113,
+      "v3_fire_decisions": 43,
+      "v2_fire_held_by_v3_gate": 73,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 73,
+        "recorded_hits": 47,
+        "hit_rate": 0.644
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 34,
+        "recorded_hits": 21,
+        "hit_rate": 0.618
+      },
+      "route_calls": 52,
+      "route_cpu_s": 0.002,
+      "route_max_ms": 0.059,
+      "local_cpu_s": 0.095,
+      "local_first_act_ms": 0.004,
+      "local_max_act_ms": 0.086,
+      "local_max_act_tick": 43098
+    },
+    {
+      "log": "比赛日志/对局24/training-53de8249-10a1-4627-b271-b41a99d4f2e4.jsonl.gz",
+      "decisions": 55500,
+      "changed_vs_v2": 14452,
+      "retake_sites_ruled_out": 0,
+      "retake_unknown_position_decisions": 3200,
+      "retake_band_far": 3200,
+      "recorded_fire_decisions": 61,
+      "v3_fire_decisions": 37,
+      "v2_fire_held_by_v3_gate": 28,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 42,
+        "recorded_hits": 39,
+        "hit_rate": 0.929
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 27,
+        "recorded_hits": 25,
+        "hit_rate": 0.926
+      },
+      "route_calls": 164,
+      "route_cpu_s": 0.3428,
+      "route_max_ms": 4.504,
+      "local_cpu_s": 0.598,
+      "local_first_act_ms": 0.005,
+      "local_max_act_ms": 4.55,
+      "local_max_act_tick": 45315
+    },
+    {
+      "log": "比赛日志/对局25/training-18f8b663-48ff-4cd0-9799-987223aefae5.jsonl.gz",
+      "decisions": 33602,
+      "changed_vs_v2": 4961,
+      "retake_sites_ruled_out": 0,
+      "recorded_fire_decisions": 116,
+      "v3_fire_decisions": 30,
+      "v2_fire_held_by_v3_gate": 89,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 72,
+        "recorded_hits": 47,
+        "hit_rate": 0.653
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 25,
+        "recorded_hits": 23,
+        "hit_rate": 0.92
+      },
+      "route_calls": 84,
+      "route_cpu_s": 0.0033,
+      "route_max_ms": 0.067,
+      "local_cpu_s": 0.14,
+      "local_first_act_ms": 0.004,
+      "local_max_act_ms": 0.076,
+      "local_max_act_tick": 84135
+    },
+    {
+      "log": "比赛日志/对局26/training-ef711bdf-6f3a-4ad4-bdfb-695f01f5ffde.jsonl.gz",
+      "decisions": 45066,
+      "changed_vs_v2": 11605,
+      "retake_sites_ruled_out": 1,
+      "retake_unknown_position_decisions": 2864,
+      "retake_band_far": 2469,
+      "recorded_fire_decisions": 101,
+      "v3_fire_decisions": 63,
+      "v2_fire_held_by_v3_gate": 38,
+      "retake_band_mid": 210,
+      "retake_band_near": 185,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 58,
+        "recorded_hits": 44,
+        "hit_rate": 0.759
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 43,
+        "recorded_hits": 36,
+        "hit_rate": 0.837
+      },
+      "route_calls": 161,
+      "route_cpu_s": 0.3309,
+      "route_max_ms": 3.699,
+      "local_cpu_s": 0.568,
+      "local_first_act_ms": 0.008,
+      "local_max_act_ms": 3.995,
+      "local_max_act_tick": 3
+    },
+    {
+      "log": "比赛日志/对局27/training-70cbcf12-2532-40a0-99cf-040251cbbf87.jsonl.gz",
+      "decisions": 39252,
+      "changed_vs_v2": 6484,
+      "retake_sites_ruled_out": 0,
+      "recorded_fire_decisions": 151,
+      "v2_fire_held_by_v3_gate": 64,
+      "v3_fire_decisions": 88,
+      "retake_unknown_position_decisions": 1139,
+      "retake_band_far": 1090,
+      "retake_band_mid": 49,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 83,
+        "recorded_hits": 59,
+        "hit_rate": 0.711
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 68,
+        "recorded_hits": 54,
+        "hit_rate": 0.794
+      },
+      "route_calls": 89,
+      "route_cpu_s": 0.0042,
+      "route_max_ms": 0.074,
+      "local_cpu_s": 0.189,
+      "local_first_act_ms": 0.005,
+      "local_max_act_ms": 0.086,
+      "local_max_act_tick": 109332
+    },
+    {
+      "log": "比赛日志/对局28/training-4bee90a7-1319-452d-893c-310720421679.jsonl.gz",
+      "decisions": 29280,
+      "changed_vs_v2": 1950,
+      "retake_sites_ruled_out": 0,
+      "recorded_fire_decisions": 121,
+      "v3_fire_decisions": 53,
+      "v2_fire_held_by_v3_gate": 69,
+      "recorded_fire_hit_rate": {
+        "recorded_shots": 75,
+        "recorded_hits": 40,
+        "hit_rate": 0.533
+      },
+      "recorded_shots_v3_would_also_fire": {
+        "recorded_shots": 44,
+        "recorded_hits": 33,
+        "hit_rate": 0.75
+      },
+      "route_calls": 53,
+      "route_cpu_s": 0.0024,
+      "route_max_ms": 0.163,
+      "local_cpu_s": 0.133,
+      "local_first_act_ms": 0.008,
+      "local_max_act_ms": 0.186,
+      "local_max_act_tick": 29769
+    }
+  ],
+  "limitations": "Observations, positions and hits are recorded V0/V1 outcomes. V3 actions are not applied to a game engine, so held shots are not replayed later and route changes do not move the player. Hit rates describe recorded shots only. Local timing is descriptive; the platform may be about 1.5x slower."
+}
