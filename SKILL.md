@@ -6,7 +6,7 @@ description: Calibrate your AGX fps approximation from your own match logs, opti
 # 操作步骤 / Steps
 
 1. 先读 README.md 和公开规则，确认 `agent/agent.py` 的 init/act 接口。Read README.md and public rules; preserve the init/act interface.
-2. 请学生从本人已结束对局下载本人席位 training.jsonl；不索取账号凭据。Ask the student to download their own seat log from a completed match; never request account credentials.
+2. 请学生从本人已结束对局下载本人席位 training.jsonl；先核对 export_complete，再直接使用导出文件，无需补 type 标签；不索取账号凭据。Ask the student to download their own seat log from a completed match; first verify export_complete, then use the export directly without adding type tags; never request account credentials.
 3. 运行 `calibrate/fit.py training.jsonl --game fps --output fitted.json`。检查样本数与 null，分组地图/移动方式，保留验证集；补齐自己的参数估计并记录依据。Run calibration, inspect counts/nulls, stratify conditions, retain held-out logs and document student estimates.
 4. 按 README 在 sim 里优化路线/站位或行车线/速度。所有动力学和判定参数都用本人日志标定；不将示例系数描述成平台真实值。Run the local model; fit dynamics/adjudication parameters from the student's logs. Example coefficients are not platform constants.
 5. 将选中行为接入 agent/agent.py；只依赖提交的 Python、NPZ、标准库和可用 NumPy。赛车保留合法 design.json。Transfer selected behaviour into agent/agent.py; preserve a legal racing design.json.

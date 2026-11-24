@@ -18,11 +18,23 @@ def fit(path, game):
         game: fps or racing.
     """
     groups, measurements = {}, {k: [] for k in ('speed', 'lateral', 'brake', 'accel', 'energy')}
-    count = 0
+    count = decisions = 0
+    export_seat = None
     with path.open() as stream:
         for line in stream:
             row = json.loads(line)
-            if row.get('type') != 'decision' or row.get('fault'):
+            if not isinstance(row, dict):
+                continue
+            if row.get('type') == 'metadata':
+                export_seat = row.get('seat')
+                continue
+            if (row.get('type', 'decision') != 'decision'
+                    or type(row.get('seat')) is not int or row['seat'] < 0
+                    or (export_seat is not None and row['seat'] != export_seat)
+                    or not isinstance(row.get('observation'), dict)):
+                continue
+            decisions += 1
+            if row.get('fault'):
                 continue
             o, a = row['observation'], row.get('applied_action') or row.get('action') or {}
             car = o.get('me' if game == 'fps' else 'self', {})
@@ -68,6 +80,9 @@ def fit(path, game):
         values = np.asarray(measurements[key], dtype=float)
         values = values[np.isfinite(values) & (values > 0)]
         return float(np.quantile(values, q)) if len(values) else None
+    if decisions == 0:
+        raise ValueError('No decision samples; use your seat\'s training.jsonl with an object observation '
+                         '(type="decision" or no type). / 未读到决策样本：请核对本人 seat 与对象类型的 observation')
     if count < 2:
         raise ValueError('Insufficient motion pairs; check exported observation time/fields / 有效连续移动样本不足')
     params = ({'move_speed_mps': quantile('speed', .8)} if game == 'fps' else
@@ -85,6 +100,9 @@ if __name__ == '__main__':
     p.add_argument('--game', choices=('fps', 'racing'), required=True)
     p.add_argument('--output', type=Path, default=Path('fitted.json'))
     args = p.parse_args()
-    result = fit(args.training, args.game)
+    try:
+        result = fit(args.training, args.game)
+    except ValueError as error:
+        p.error(str(error))
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False)+'\n')
     print(json.dumps(result, ensure_ascii=False, allow_nan=False))
